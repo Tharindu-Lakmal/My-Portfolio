@@ -1,11 +1,49 @@
+/* Font Styel */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-hero: rgb(176, 185, 182);
+
+
+  --text-light: rgb(255, 255, 255);
+  --text-dark: rgb(22, 26, 32);
+  --text-dark-light: rgb(22, 26, 32, 0.8);
+  --text-dark-extra-light: rgb(22, 26, 32, 0.6);
+
+  --stroke-color: rgb(176, 185, 182, 0.4);
+
+  --button-normal: rgb(22, 26, 32);
+  --button-active: rgb(92, 51, 222);
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
   }
   
   body {
     min-height: 100vh;
     scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, span {
+    font-size: 4rem;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    letter-spacing: 1px;
   }
