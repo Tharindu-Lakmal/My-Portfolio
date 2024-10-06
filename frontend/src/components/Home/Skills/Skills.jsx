@@ -19,7 +19,7 @@ const Skills = () => {
 
                         {frontend_skills.map((item, index) => {
                             return (
-                                <div className="skills-data">
+                                <div className="skills-data" key={index}>
                                     <p className="number">{item.number}</p>
                                     <p className="skill-type">{item.type}</p>
                                 </div>
@@ -38,7 +38,7 @@ const Skills = () => {
 
                         {backend_skills.map((item, index) => {
                             return (
-                                <div className="skills-data">
+                                <div className="skills-data" key={index}>
                                     <p className="number">{item.number}</p>
                                     <p className="skill-type">{item.type}</p>
                                 </div>

@@ -6,7 +6,7 @@
 
 
   --text-light: rgb(255, 255, 255);
-  --text-dark: rgb(22, 26, 32);
+  --text-dark: #161a20;
   --text-dark-light: rgb(22, 26, 32, 0.9);
   --text-dark-extra-light: rgb(22, 26, 32, 0.6);
 
@@ -53,11 +53,13 @@
   h1, span {
     font-size: 4rem;
     letter-spacing: 2px;
+    color: var(--text-dark);
   }
 
   h2 {
     font-size: 24px;
     font-weight: 500;
+    color: var(--text-dark);
   }
 
   h3 {

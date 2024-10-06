@@ -41,6 +41,8 @@ const Work = () => {
                     )
                 })}
             </div>
+
+            <button className="btn-work btn-dark">More work</button>
         </div>
     </div>
   )
