@@ -69,7 +69,7 @@
     flex-wrap: wrap;
     gap: 0.7rem;
 
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--text-light);
     letter-spacing: 1px;
@@ -86,7 +86,7 @@
 .scroller[data-animated="true"] .scroller_inner {
     width: fit-content;
     flex-wrap: nowrap;
-    animation: 300s linear infinite scroll;
+    animation: 100s linear infinite scroll;
 }
 
 @keyframes scroll {
