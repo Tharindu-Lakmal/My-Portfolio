@@ -7,13 +7,19 @@
 
   --text-light: rgb(255, 255, 255);
   --text-dark: rgb(22, 26, 32);
-  --text-dark-light: rgb(22, 26, 32, 0.8);
+  --text-dark-light: rgb(22, 26, 32, 0.9);
   --text-dark-extra-light: rgb(22, 26, 32, 0.6);
 
-  --stroke-color: rgb(176, 185, 182, 0.4);
+  --stroke-color: rgb(176, 185, 182, 0.5);
 
   --button-normal: rgb(22, 26, 32);
+  --button-normal-light: rgb(255, 255, 255);
   --button-active: rgb(92, 51, 222);
+
+  --font-small: 18px;
+  --font-extra-amall: 12px;
+  --font-medium: 48px;
+  --font-large: 64px;
 }
 
 * {
@@ -36,9 +42,22 @@
     text-decoration: none;
   }
 
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    color: var(--text-dark-light);
+  }
+
   h1, span {
     font-size: 4rem;
     letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
   }
 
   h3 {

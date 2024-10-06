@@ -1,0 +1,168 @@
+.skills {
+    margin: 60px 0 0;
+}
+
+.skills-container {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skills .frontend-t, .backend-t {
+    color: var(--text-dark-light);
+}
+
+.skills-data-all {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 14px;
+}
+
+.skills-data {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    border: 1px solid var(--stroke-color);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-block: 24px;
+}
+
+.skills-data:last-child {
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+.number {
+    color: var(--text-dark-extra-light);
+    font-size: 12px;
+}
+
+.skill-type {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    
+    .skills-container {
+        margin: 0 50px;
+        gap: 24px;
+    }
+    
+    .skills-data-all {
+        margin-block-start: 18px;
+    }
+
+    .skills-data {
+        gap: 28px;
+        padding-block: 28px;
+    }
+
+    .number {
+        font-size: 14px;
+    }
+    
+    .skill-type {
+        font-size: 48px;
+    }
+    
+}
+
+
+@media only screen and (min-width:768px) {
+    .skills {
+        margin: 80px 0 0;
+    }
+    
+    .skills-container {
+        margin: 0 70px;
+        gap: 28px;
+    }
+
+    .skills-content {
+        flex-direction: row;
+        gap: 42px;
+    }
+
+    .skills-content .left-side {
+        width: 50%;
+    }
+
+    .skills-content .right-side {
+        width: 50%;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    .skills {
+        margin: 100px 0 0;
+    }
+    
+    .skills-container {
+        margin: 0 100px;
+        gap: 42px;
+    }
+
+    .skills-content {
+        gap: 48px;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+
+    .skills-data {
+        padding-block: 28px;
+        gap: 42px;
+    }
+
+    .skill-type {
+        font-size: 54px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    
+    .skills-container {
+        margin: 0 120px;
+    }
+
+    .number {
+        font-size: 18px;
+    }
+
+    .skill-type, .number {
+        margin-block: 12px;
+    }
+
+    .skill-type {
+        font-size: 72px;
+    }
+    
+}
+
+@media only screen and (min-width:1400px) {
+    
+    .skills-container {
+        margin: 0 180px;
+    }
+}

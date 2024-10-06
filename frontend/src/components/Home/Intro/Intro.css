@@ -1,0 +1,165 @@
+.info {
+    margin: 60px 0 0;
+}
+
+.info-container {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.info-content .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.left-side .header-p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 28px;
+    color: var(--text-dark);
+}
+
+.right-side .header-text {
+    margin-block-end: 24px;
+}
+
+.info-content .about-btn {
+    padding: 40px 20px;
+    border: none;
+    border-radius: 200px;
+    color: var(--text-light);
+    background-color: var(--button-normal);
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    .info-content {
+        flex-direction: row;
+        margin-bottom: 36px;
+    }
+
+    .info-container {
+        margin: 0 50px;
+        gap: 24px;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .info {
+        margin: 80px 0 0;
+    }
+    
+    .info-container {
+        margin: 0 70px;
+        gap: 36px;
+    }
+    
+    .info-content {
+        flex-direction: row;
+        margin-bottom: 42px;
+        gap: 48px;
+    }
+
+    .info-content .about-btn {
+        padding: 60px 40px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    .info {
+        margin: 100px 0 0;
+    }
+    
+    .info-container {
+        margin: 0 100px;
+    }
+    
+    .info-content {
+        gap: 64px;
+        margin-bottom: 60px;
+    }
+    
+    .info-content .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    .left-side .header-p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    
+    .right-side .header-text {
+        margin-block-end: 28px;
+    }
+    
+    .info-content .about-btn {
+        padding: 60px 40px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .info {
+        margin: 100px 0 0;
+    }
+    
+    .info-container {
+        margin: 0 120px;
+    }
+    
+    .info-content {
+        gap: 120px;
+        margin-bottom: 80px;
+    }
+    
+    .info-content .left-side {
+        gap: 20px;
+    }
+    
+    .left-side .header-p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .right-side .header-text {
+        margin-block-end: 36px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    
+    .info-container {
+        margin: 0 180px;
+    }
+    
+    .info-content {
+        gap: 140px;
+    }
+    
+    .info-content .left-side {
+        max-width: 50%;
+        gap: 24px;
+    }
+
+    .info-content .right-side {
+        max-width: 30%;
+        gap: 30px;
+    }
+}
