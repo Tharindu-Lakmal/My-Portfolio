@@ -161,6 +161,11 @@
 }
 
 @media only screen and (min-width:1400px) {
+
+    .skills {
+        margin: 100px auto 0;
+        max-width: 1920px;
+    }
     
     .skills-container {
         margin: 0 180px;

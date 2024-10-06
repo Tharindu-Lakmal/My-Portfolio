@@ -144,6 +144,11 @@
 }
 
 @media only screen and (min-width:1400px) {
+
+    .info {
+        margin: 100px auto 0;
+        max-width: 1920px;
+    }
     
     .info-container {
         margin: 0 180px;

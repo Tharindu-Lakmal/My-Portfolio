@@ -1,0 +1,135 @@
+.imageSlider {
+    margin: 80px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+}
+
+.imageSlider-container {
+    max-width: 100%;
+}
+
+.slider {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.slider .top-slider {
+    min-width: 220px;
+}
+
+.top-slider img {
+    width: 100%;
+}
+
+.imageSlider-container[data-animated="true"] {
+    overflow: hidden;
+}
+
+.imageSlider-container[data-animated="true"] .slider {
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: var(--_animation-duration) var(--_animation-direction, forwards) linear infinite scroll;
+}
+
+.imageSlider-container[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.imageSlider-container[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.imageSlider-container[data-speed="slow"] {
+    --_animation-duration: 50s;
+}
+
+.imageSlider-container[data-speed="fast"] {
+    --_animation-duration: 30s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 4px));
+    }
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    
+    .slider {
+        gap:12px;
+    }
+    
+    .slider .top-slider {
+        min-width: 260px;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .imageSlider {
+        margin: 100px 0 0;
+    }
+
+    .slider {
+        gap:14px;
+    }
+    
+    .slider .top-slider {
+        min-width: 280px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    .imageSlider {
+        margin: 120px 0 0;
+    }
+
+    .slider {
+        gap:18px;
+    }
+    
+    .slider .top-slider {
+        min-width: 320px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .imageSlider {
+        margin: 140px 0 0;
+    }
+
+    .slider {
+        gap:24px;
+    }
+    
+    .slider .top-slider {
+        min-width: 360px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+
+    .imageSlider {
+        gap: 3vh;
+    }
+
+    .imageSlider {
+        margin: 10% 0 0;
+    }
+
+    .slider {
+        gap:2%;
+    }
+    
+    .slider .top-slider {
+        min-width: 30%;
+    }
+}

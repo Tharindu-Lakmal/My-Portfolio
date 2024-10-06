@@ -52,7 +52,7 @@
 
 .hero .user-container img {
     width: auto;
-    height: 95vh;
+    height: 100vh;
     bottom: 0;
 }
 
@@ -86,7 +86,7 @@
 .scroller[data-animated="true"] .scroller_inner {
     width: fit-content;
     flex-wrap: nowrap;
-    animation: 100s linear infinite scroll;
+    animation: 60s linear infinite scroll;
 }
 
 @keyframes scroll {
@@ -185,7 +185,7 @@
     .scroller .scroller_inner {
         gap: 2rem;
     
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         letter-spacing: 2px;
         font-weight: 600;
     }
@@ -209,7 +209,7 @@
     .scroller .scroller_inner {
         gap: 2rem;
     
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         letter-spacing: 2px;
         font-weight: 600;
     }
