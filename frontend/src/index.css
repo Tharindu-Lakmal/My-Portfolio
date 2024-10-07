@@ -11,6 +11,7 @@
   --text-dark-extra-light: rgb(22, 26, 32, 0.6);
 
   --stroke-color: rgb(176, 185, 182, 0.5);
+  --stroke-color-light: rgb(176, 185, 182, 0.3);
 
   --button-normal: rgb(22, 26, 32);
   --button-normal-light: rgb(255, 255, 255);
@@ -67,4 +68,30 @@
     font-weight: 500;
     color: var(--text-light);
     letter-spacing: 1px;
+  }
+
+  button, a {
+    cursor: pointer;
+  }
+
+  .btn-light {
+    color: var(--text-light);
+    padding: 24px 24px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 100px;
+    font-size: 16px;
+    background-color: var(--button-normal);
+  }
+
+  .btn-light:is(:hover, :focus-visible) {
+    border: 1px solid var(--button-active);
+    background-color: var(--button-active);
+  }
+
+  .btn-dark-full {
+    background-color: var(--button-active);
+    padding: 24px 24px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 100px;
+    font-size: 16px;
   }

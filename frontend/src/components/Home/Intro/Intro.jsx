@@ -29,7 +29,7 @@ const Intro = () => {
                         vision to life.
                     </p>
 
-                    <button className='about-btn'>Anout me</button>
+                    <button className='about-btn'>About me</button>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ import card5 from './card5.png'
 import card6 from './card6.png'
 import card7 from './card7.png'
 import card8 from './card8.png'
+import whatsapp from './whatsapp.png'
 
 export const assets = {
     user,
@@ -18,6 +19,7 @@ export const assets = {
     playBoll,
     traveller,
     turbofix,
+    whatsapp
 }
 
 
