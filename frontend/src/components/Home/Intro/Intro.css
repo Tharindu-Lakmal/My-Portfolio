@@ -37,10 +37,15 @@
 
 .info-content .about-btn {
     padding: 40px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 200px;
     color: var(--text-light);
     background-color: var(--button-normal);
+}
+
+.info-content .about-btn:is(:hover, :focus-visible) {
+    background-color: var(--button-active);
 }
 
 
