@@ -57,7 +57,7 @@
     margin-block-start: 72px;
 }
 
-.contact-link .phone {
+.contact-link .phone, .contact-link .email {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,6 +95,13 @@
 
 .social-link {
     cursor: pointer;
+}
+
+.social-links iframe {
+    border: none;
+    width: 16px;
+    height: 16px;
+    margin: auto 0;
 }
 
 
@@ -210,8 +217,13 @@
         margin: 0 180px;
     }
 
+    
+    .footer-content h1 {
+        font-size: 300%;
+    }
+
     .footer .footer-content h1, 
     .footer-content span {
-        font-size: 72px;
+        font-size: 5rem;
     }
 }
