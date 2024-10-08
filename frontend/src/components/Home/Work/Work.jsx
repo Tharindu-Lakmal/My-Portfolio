@@ -1,6 +1,6 @@
 import React from 'react'
 import './Work.css'
-import { top_work } from '../../assets/assets'
+import { top_work } from '../../../assets/assets'
 
 const Work = () => {
   return (

@@ -1,0 +1,135 @@
+.workHeader {
+    width: 100%;
+    cursor: auto;
+}
+
+.workHeader-container {
+    margin: 100px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.workHeader .workHeader-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-bottom: 1px solid var(--stroke-color);
+    padding-block-end: 24px;
+}
+
+.workHeader-container .workHeader-img {
+    width: 100%;
+}
+
+.workHeader-container .workHeader-img img {
+    position: relative;
+    width: 100%;
+}
+
+.workHeader-header h3 {
+    font-size: 36px;
+    color: var(--text-dark);
+    letter-spacing: 0.6px;
+}
+
+.workHeader-content .workHeader-btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+
+
+
+
+.content-section {
+    opacity: 0;
+    transform: translateY(100px); /* Start from below */
+    transition: opacity 500ms linear, transform 500ms linear; /* Smooth transition */
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.content-section.active {
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+    position: relative;
+}
+
+
+.all-work {
+    opacity: 0;
+    transform: translateY(100px); /* Start from below */
+    transition: 500ms linear; /* Smooth transition */
+}
+
+.all-work.active {
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    
+    .workHeader-container {
+        margin: 0 50px;
+        gap: 24px;
+    }
+    
+}
+
+
+@media only screen and (min-width:768px) {
+    .workHeader {
+        margin: 80px 0 0;
+    }
+    
+    .workHeader-container {
+        margin: 0 70px;
+        gap: 28px;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) {
+    .workHeader {
+        margin: 100px 0 0;
+    }
+    
+    .workHeader-container {
+        margin: 0 100px;
+        gap: 42px;
+    }
+
+
+    
+}
+
+@media only screen and (min-width:1200px) {
+    
+    .workHeader-container {
+        margin: 0 120px;
+    }
+    
+}
+
+@media only screen and (min-width:1400px) {
+
+    .workHeader {
+        margin: 100px auto 0;
+        max-width: 1920px;
+    }
+    
+    .workHeader-container {
+        margin: 0 180px;
+    }
+}
