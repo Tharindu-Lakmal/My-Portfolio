@@ -43,6 +43,7 @@
 .number {
     color: var(--text-dark-extra-light);
     font-size: 12px;
+    transition: 200ms linear;
 }
 
 .skill-type {
@@ -50,6 +51,15 @@
     font-style: italic;
     font-weight: 400;
     color: var(--text-dark);
+    transition: 300ms linear;
+    transition-delay: 100ms;
+}
+
+.skills-data:is(:hover, :focus-visible) .number,
+.skills-data:is(:hover, :focus-visible) .skill-type {
+    transform: translateX(24px);
+    scale: 1.1;
+    color: var(--button-active);
 }
 
 

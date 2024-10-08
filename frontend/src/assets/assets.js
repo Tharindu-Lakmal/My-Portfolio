@@ -30,7 +30,7 @@ export const top_work = [
         card_img: foodBuddy,
         category: "Design",
         name: "FOOD BUDDY",
-        description: "creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
         Link: ""
     },
@@ -38,7 +38,7 @@ export const top_work = [
         card_img: playBoll,
         category: "Design & Development",
         name: "Play Boll",
-        description: "creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
         Link: ""
     },
@@ -46,7 +46,7 @@ export const top_work = [
         card_img: traveller,
         category: "Design & Development",
         name: "The Traveller",
-        description: "creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB", "Bootstrap"],
         Link: ""
     },
@@ -54,7 +54,7 @@ export const top_work = [
         card_img: turbofix,
         category: "Design",
         name: "TurboFix",
-        description: "creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
         Link: ""
     },

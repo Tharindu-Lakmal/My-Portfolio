@@ -76,7 +76,7 @@
 
   .btn-light {
     color: var(--text-light);
-    padding: 24px 24px;
+    padding: 24px 48px;
     border: 1px solid var(--stroke-color);
     border-radius: 100px;
     font-size: 16px;
