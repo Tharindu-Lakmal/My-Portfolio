@@ -12,6 +12,15 @@ import card6 from './card6.png'
 import card7 from './card7.png'
 import card8 from './card8.png'
 import whatsapp from './whatsapp.png'
+import work_img from './work_img.png'
+
+import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
+import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
+import HotelPartner from './HotelPartner.png'
+import Play_Boll from './Play_Boll.png'
+import The_Traveler from './The_Traveler.png'
+import Turbo_Fix from './Turbo_Fix.png'
+import UNICON from './UNICON.png'
 
 export const assets = {
     user,
@@ -19,8 +28,77 @@ export const assets = {
     playBoll,
     traveller,
     turbofix,
-    whatsapp
+    whatsapp,
+    work_img,
+    FOOD_BUDDY1,
+    FOOD_BUDDY2,
+    HotelPartner,
+    Play_Boll,
+    The_Traveler,
+    Turbo_Fix,
+    UNICON
+
 }
+
+
+export const all_work = [
+    {
+        card_img: FOOD_BUDDY1,
+        category: "Design",
+        name: "FOOD BUDDY",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop"],
+        Link: ""
+    },
+    {
+        card_img: The_Traveler,
+        category: "Design & Development",
+        name: "The Traveler",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        Link: ""
+    },
+    {
+        card_img: Play_Boll,
+        category: "Design & Development",
+        name: "Play Boll",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        Link: ""
+    },
+    {
+        card_img: FOOD_BUDDY2,
+        category: "Design",
+        name: "FOOD BUDDY",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop"],
+        Link: ""
+    },
+    {
+        card_img: Turbo_Fix,
+        category: "Design",
+        name: "Turbo Fix",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop"],
+        Link: ""
+    },
+    {
+        card_img: HotelPartner,
+        category: "Design & Development",
+        name: "Hotel Partner",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        Link: ""
+    },
+    {
+        card_img: UNICON,
+        category: "Design & Development",
+        name: "UNICON",
+        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        Link: ""
+    }
+]
 
 
 export const slider =[card1, card2, card3, card4, card5, card6, card7, card8]

@@ -3,7 +3,7 @@ import "./Home.css"
 import Hero from '../../components/Home/Hero/Hero'
 import Intro from '../../components/Home/Intro/Intro'
 import Skills from '../../components/Home/Skills/Skills'
-import Work from '../../components/Work/Work'
+import Work from '../../components/Home/Work/Work'
 import ImageSlider from '../../components/Home/ImageSlider/ImageSlider'
 import Footer from '../../components/Footer/Footer'
 

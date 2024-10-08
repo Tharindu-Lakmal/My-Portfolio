@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Work.css"
+import WorkHeader from '../../components/Work/WorkHeader/WorkHeader'
 
 const Work = () => {
   return (
     <div className='work'>
-        <h1>Work</h1>
+        <WorkHeader />
     </div>
   )
 }
