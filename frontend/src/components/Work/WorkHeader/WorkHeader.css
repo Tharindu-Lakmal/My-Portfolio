@@ -4,7 +4,7 @@
 }
 
 .workHeader-container {
-    margin: 100px 20px 0;
+    margin: 80px 20px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -13,13 +13,14 @@
 .workHeader .workHeader-content {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
     border-bottom: 1px solid var(--stroke-color);
     padding-block-end: 24px;
 }
 
 .workHeader-container .workHeader-img {
     width: 100%;
+    display: none;
 }
 
 .workHeader-container .workHeader-img img {
@@ -39,20 +40,18 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
+    margin-block-start: 24px;
 }
-
-
-
-
 
 
 .content-section {
     opacity: 0;
     transform: translateY(100px); /* Start from below */
-    transition: opacity 500ms linear, transform 500ms linear; /* Smooth transition */
+    transition: opacity 600ms linear, transform 500ms linear; /* Smooth transition */
     position: absolute;
     width: 100%;
     top: 0;
+    transition-delay: 100ms;
 }
 
 .content-section.active {
@@ -80,44 +79,65 @@
 @media only screen and (min-width:540px) {
     
     .workHeader-container {
-        margin: 0 50px;
+        margin: 80px 50px;
         gap: 24px;
     }
     
+    .workHeader-container {
+        gap: 40px;
+    }
 }
 
 
 @media only screen and (min-width:768px) {
-    .workHeader {
-        margin: 80px 0 0;
-    }
     
     .workHeader-container {
-        margin: 0 70px;
-        gap: 28px;
+        margin: 80px 70px;
+    }
+
+    .workHeader-container .workHeader-img {
+        width: 80%;
+    }
+
+    .workHeader-header h3 {
+        font-size: 46px;
     }
 
 }
 
 
 @media only screen and (min-width:992px) {
-    .workHeader {
-        margin: 100px 0 0;
-    }
     
     .workHeader-container {
-        margin: 0 100px;
-        gap: 42px;
+        margin: 100px 100px;
     }
 
+    .workHeader-container .workHeader-img {
+        width: 80%;
+    }
 
+    .workHeader-header h3 {
+        font-size: 58px;
+    }
+
+    .workHeader-content .workHeader-btn {
+        gap: 16px;
+    }
     
 }
 
 @media only screen and (min-width:1200px) {
     
     .workHeader-container {
-        margin: 0 120px;
+        margin: 140px 120px;
+    }
+
+    .workHeader-container .workHeader-img {
+        width: 80%;
+    }
+
+    .workHeader-header h3 {
+        font-size: 72px;
     }
     
 }
@@ -125,11 +145,15 @@
 @media only screen and (min-width:1400px) {
 
     .workHeader {
-        margin: 100px auto 0;
+        margin: 0 auto;
         max-width: 1920px;
     }
     
     .workHeader-container {
-        margin: 0 180px;
+        margin: 140px 180px;
+    }
+
+    .workHeader-header h3 {
+        font-size: 5rem;
     }
 }
