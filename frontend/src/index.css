@@ -98,10 +98,10 @@ button, a {
 
 .btn-empty {
   color: var(--text-dark);
-  padding: 18px 28px;
+  padding: 22px 28px;
   border: 1px solid var(--stroke-color);
   border-radius: 100px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: transparent;
 }
 
@@ -110,7 +110,7 @@ button, a {
   padding: 18px 28px;
   border: 1px solid var(--button-active);
   border-radius: 100px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: var(--button-active);
 }
 

@@ -4,7 +4,7 @@ import { all_work } from '../../../assets/assets'
 
 const Design = () => {
   return (
-    <div className='design'>
+    <div className='allWork'>
         {all_work.map((item, index) => {
             return (
                 <div className="allWork-card" key={index}>
