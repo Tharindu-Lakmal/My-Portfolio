@@ -32,6 +32,7 @@
     font-size: 36px;
     color: var(--text-dark);
     letter-spacing: 0.6px;
+    font-weight: 400;
 }
 
 .workHeader-content .workHeader-btn {
