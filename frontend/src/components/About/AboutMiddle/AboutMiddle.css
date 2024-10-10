@@ -1,0 +1,108 @@
+.aboutMiddle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutMiddle .aboutMiddle-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutMiddle .aim {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutMiddle .aim img {
+    width: 24px;
+    max-width: 40px;
+}
+
+.aboutMiddle .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 28px 0;
+}
+
+.aboutMiddle .container-card .card-icon-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.aboutMiddle .card-content {
+    padding-inline-start: 16px;
+}
+
+.aboutMiddle .container-card p {
+    font-style: italic;
+}
+
+.aboutMiddle .userBig {
+    position: relative;
+}
+
+.userBig img {
+    width: 100%;
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:768px) {
+    .aboutMiddle {
+        gap: 48px;
+    }
+    
+    .aboutMiddle .aboutMiddle-top {
+        gap: 32px;
+    }
+    
+    .aboutMiddle .aim {
+        gap: 16px;
+    }
+    
+    .aboutMiddle .aim img {
+        width: 32px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    .aboutMiddle {
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    .aboutMiddle .aim img {
+        width: 36px;
+    }
+
+    .aboutMiddle .userBig {
+        width: 240%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .aboutMiddle {
+        gap: 54px;
+    }
+    
+    .aboutMiddle .aboutMiddle-top {
+        gap: 36px;
+    }
+    
+    .aboutMiddle .aim {
+        gap: 24px;
+    }
+    
+    .aboutMiddle .aim img {
+        width: 40px;
+    }
+}

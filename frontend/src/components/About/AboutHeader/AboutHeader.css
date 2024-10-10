@@ -1,0 +1,238 @@
+.aboutHeader {
+    width: 100%;
+}
+
+.aboutHeader-container {
+    margin: 80px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutHeader .aboutHeader-header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-bottom: 1px solid var(--stroke-color);
+    padding-block-end: 24px;
+}
+
+.aboutHeader-header-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aboutHeader-header-top .about-img {
+    width: 30%;
+    max-width: 200px;
+}
+
+.aboutHeader-header-top .about-img img {
+    width: 100%;
+}
+
+.about-main-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutHeader-header h2 {
+    font-size: 24px;
+}
+
+.aboutHeader-header h3 {
+    font-size: 36px;
+    color: var(--text-dark);
+    letter-spacing: 0.6px;
+    font-weight: 400;
+}
+
+/* next............................ */
+
+.aboutHeader-header-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.aboutHeader-header-bottom .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 42px 42px;
+    min-height: 280px;
+}
+
+.aboutHeader-header-bottom .container-card .card-icon-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.aboutHeader-header-bottom .container-card p {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.aboutHeader-middle,
+.aboutHeader-bottom {
+    margin-block-start: 40px;
+}
+
+.aboutHeader-header-bottom .container-card:nth-child(1) {
+    background-color: var(--bg-hero);
+}
+.aboutHeader-header-bottom .container-card:nth-child(2) {
+    background-color: var(--button-active);
+    color: var(--text-light);
+}
+.aboutHeader-header-bottom .container-card:nth-child(2) p {
+    color: var(--text-light);
+}
+.aboutHeader-header-bottom .container-card:nth-child(3) {
+    background-color: var(--bg-hero-light);
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    
+    .aboutHeader-container {
+        margin: 80px 50px;
+        gap: 24px;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    
+    .aboutHeader-container {
+        margin: 80px 70px;
+    }
+
+    .about-main-header h2 {
+        font-size: 32px;
+    }
+
+    .about-main-header h3 {
+        font-size: 46px;
+    }
+
+    .aboutHeader-middle,
+    .aboutHeader-bottom {
+        margin-block-start: 60px;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) {
+    
+    .aboutHeader-container {
+        margin: 100px 100px;
+    }
+
+    .aboutHeader .aboutHeader-header {
+        gap: 70px;
+        padding-block-end: 48px;
+    }
+
+    .aboutHeader-header-top {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .about-main-header {
+        gap: 24px;
+    }
+
+    .about-main-header h3 {
+        font-size: 58px;
+    }
+
+    .about-main-header h2 {
+        font-size: 44px;
+    }
+
+    .aboutHeader-header-bottom {
+        gap: 28px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .aboutHeader-middle,
+    .aboutHeader-bottom {
+        margin-block-start: 80px;
+    }
+    
+}
+
+@media only screen and (min-width:1200px) {
+    
+    .aboutHeader-container {
+        margin: 140px 120px;
+    }
+
+    .aboutHeader .aboutHeader-header {
+        gap: 100px;
+    }
+
+    .about-main-header h2 {
+        font-size: 58px;
+    }
+
+    .about-main-header h3 {
+        font-size: 72px;
+    }
+
+    .aboutHeader-middle {
+        margin-block-start: 100px;
+    }
+
+    .aboutHeader-middle,
+    .aboutHeader-bottom {
+        margin-block-start: 100px;
+    }
+    
+}
+
+@media only screen and (min-width:1400px) {
+
+    .aboutHeader {
+        margin: 0 auto;
+        max-width: 1920px;
+    }
+    
+    .aboutHeader-container {
+        margin: 140px 180px;
+    }
+
+    .about-main-header h3 {
+        font-size: 5rem;
+    }
+
+    .aboutHeader-header-bottom {
+        position: relative;
+    }
+
+    .aboutHeader-header-bottom .container-card:nth-child(1) {
+        background-color: var(--bg-hero);
+    }
+    .aboutHeader-header-bottom .container-card:nth-child(2) {
+        transform: translateY(100px);
+    }
+    .aboutHeader-header-bottom .container-card:nth-child(3) {
+        transform: translateY(40px);
+    }
+
+
+    .aboutHeader .aboutHeader-header {
+        padding-block-end: 160px;
+    }
+}

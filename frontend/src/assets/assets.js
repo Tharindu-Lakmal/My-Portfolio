@@ -21,6 +21,13 @@ import Play_Boll from './Play_Boll.png'
 import The_Traveler from './The_Traveler.png'
 import Turbo_Fix from './Turbo_Fix.png'
 import UNICON from './UNICON.png'
+import hello from './hello.png'
+import right_quotation from './right_quotation.png'
+import right_quotation_ from './right_quotation_.png'
+import right_quotation_white from './right_quotation_white.png'
+import right_quotation_white_ from './right_quotation_white_.png'
+import aim from './aim.png'
+import userbig from './userbig.jpeg'
 
 export const assets = {
     user,
@@ -36,8 +43,14 @@ export const assets = {
     Play_Boll,
     The_Traveler,
     Turbo_Fix,
-    UNICON
-
+    UNICON,
+    hello,
+    right_quotation,
+    right_quotation_,
+    right_quotation_white,
+    right_quotation_white_,
+    aim,
+    userbig
 }
 
 
