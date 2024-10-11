@@ -34,7 +34,7 @@ const WorkHeader = () => {
                 </div>
 
                 <div className="workHeader-btn">
-                    <button onClick={() => setCurrentType("all-work")} className={currentType === "all-work"?"btn-active":"btn-empty"}>All work</button>
+                    <button onClick={() => setCurrentType("all-work")} className={currentType === "all-work"?"btn-active":"btn-empty"}>All</button>
                     <button onClick={() => setCurrentType("design")} className={currentType === "design"?"btn-active":"btn-empty"}>Design</button>
                     <button onClick={() => setCurrentType("development")} className={currentType === "development"?"btn-active":"btn-empty"}>Development</button>
                 </div>

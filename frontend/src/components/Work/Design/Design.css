@@ -1,7 +1,7 @@
 .allWork {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: 64px;
 }
 
@@ -86,19 +86,33 @@
         grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
         gap: 64px;
     }
+
+    .work-container {
+        margin: 0 70px;
+        gap: 28px;
+    }
 }
 
 
 @media only screen and (min-width:992px) {
-    
+    .work-container {
+        margin: 0 100px;
+        gap: 28px;
+    }
     
 }
 
 @media only screen and (min-width:1200px) {
-    
+    .work-container {
+        margin: 0 120px;
+        gap: 32px;
+    }
 }
 
 @media only screen and (min-width:1400px) {
-
+    .work-container {
+        margin: 0 180px;
+        gap: 32px;
+    }
     
 }

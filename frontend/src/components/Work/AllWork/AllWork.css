@@ -21,6 +21,11 @@
     width: 100%;
 }
 
+/* .allWork-card-img img:is(:hover, :focus-visible) {
+    scale: 1.05;
+    transition: 300ms ease-in-out;
+} */
+
 .allWork-base-content {
     display: flex;
     flex-direction: column;
