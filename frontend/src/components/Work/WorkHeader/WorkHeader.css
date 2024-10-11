@@ -15,7 +15,7 @@
     flex-direction: column;
     gap: 12px;
     border-bottom: 1px solid var(--stroke-color);
-    padding-block-end: 24px;
+    padding-block-end: 36px;
 }
 
 .workHeader-container .workHeader-img {
@@ -42,6 +42,7 @@
     flex-direction: row;
     gap: 8px;
     margin-block-start: 24px;
+    overflow: hidden;
 }
 
 
@@ -111,6 +112,7 @@
     
     .workHeader-container {
         margin: 100px 100px;
+        gap: 60px;
     }
 
     .workHeader-container .workHeader-img {
@@ -121,8 +123,19 @@
         font-size: 58px;
     }
 
+    .workHeader-content {
+        gap: 42px;
+    }
+
     .workHeader-content .workHeader-btn {
         gap: 16px;
+        margin-block-start: 42px;
+    }
+
+    .workHeader-container .btn-empty,
+    .workHeader-container .btn-active {
+        padding: 26px 42px;
+        font-size: 16px;
     }
     
 }

@@ -1,0 +1,120 @@
+.aboutBottomContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutBottomContent-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutBottomContent-card-container .aboutBottomContent-card:nth-child(1) {
+    background-color: #DFDFE9;
+}
+
+.aboutBottomContent-card-container .aboutBottomContent-card:nth-child(2) {
+    background-color: #E3E7E6;
+}
+
+.aboutBottomContent-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 32px;
+}
+
+.aboutBottomContent-card .card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-bottom: 1px solid var(--stroke-color);
+    padding-block-end: 24px;
+}
+
+.aboutBottomContent-card .card-top img {
+    width: 28px;
+}
+.aboutBottomContent-card .card-top p {
+    padding-block-start: 8px;
+}
+
+.aboutBottomContent-card .card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutBottomContent-card .card-bottom-tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-block-start: 12px;
+}
+
+.tools img {
+    width: 100%;
+}
+
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width:540px) {
+    .aboutBottomContent-card {
+        padding: 36px 36px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .aboutBottomContent-card {
+        padding: 48px 48px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    
+    .aboutBottomContent {
+        gap: 32px;
+    }
+
+    .card-top h2 {
+        font-size: 36px;
+    }
+
+    .aboutBottomContent-card {
+        gap: 32px;
+        padding: 54px 54px;
+    }
+
+    .aboutBottomContent-card .card-top img {
+        width: 40px;
+    }
+    .aboutBottomContent-card .card-top p {
+        padding-block-start: 24px;
+    }
+
+    .card-bottom .card-bottom-tools {
+        gap: 32px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    
+    .aboutBottomContent {
+        gap: 42px;
+    }
+
+    .aboutBottomContent-card-container {
+        flex-direction: row;
+        gap: 80px;
+    }
+    
+    .aboutBottomContent-card {
+        padding: 54px 54px;
+    }
+}

@@ -80,6 +80,10 @@
         gap: 48px;
     }
 
+    .aboutMiddle-top {
+        padding-inline-end: 6px;
+    }
+
     .aboutMiddle .aim img {
         width: 36px;
     }
@@ -96,6 +100,7 @@
     
     .aboutMiddle .aboutMiddle-top {
         gap: 36px;
+        padding-inline-end: 16px;
     }
     
     .aboutMiddle .aim {
