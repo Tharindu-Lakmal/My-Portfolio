@@ -7,6 +7,7 @@
 
 
   --text-light: rgb(255, 255, 255);
+  --text-light-extra: rgb(255, 255, 255, 0.6);
   --text-dark: rgb(22, 26, 32);
   --text-dark-light: rgb(22, 26, 32, 0.9);
   --text-dark-extra-light: rgb(22, 26, 32, 0.6);
@@ -42,6 +43,15 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  color: var(--text-light);
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration: underline;
 }
 
 p {

@@ -89,10 +89,6 @@
     color: var(--text-light);
 }
 
-.social-links p:is(:hover, :focus-visible) {
-    text-decoration: underline;
-}
-
 .social-link {
     cursor: pointer;
 }

@@ -33,8 +33,8 @@ const Footer = () => {
               <div className="social-links-inner">
                 {/* <iframe src="https://lottie.host/embed/647cd8eb-d93f-486d-bdba-d1c95a61baca/mK2YMCZilm.json"></iframe> */}
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
-                <p className="social-link">LinkdIn</p>
-                <p className="social-link">GitHub</p>
+                <a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank' className="social-link">LinkdIn</a>
+                <a href='https://github.com/Tharindu-Lakmal' target='_blank' className="social-link">GitHub</a>
               </div>
             </div>
 

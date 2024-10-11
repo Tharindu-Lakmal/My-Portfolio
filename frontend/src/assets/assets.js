@@ -13,14 +13,6 @@ import card7 from './card7.png'
 import card8 from './card8.png'
 import whatsapp from './whatsapp.png'
 import work_img from './work_img.png'
-
-import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
-import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
-import HotelPartner from './HotelPartner.png'
-import Play_Boll from './Play_Boll.png'
-import The_Traveler from './The_Traveler.png'
-import Turbo_Fix from './Turbo_Fix.png'
-import UNICON from './UNICON.png'
 import hello from './hello.png'
 import right_quotation from './right_quotation.png'
 import right_quotation_ from './right_quotation_.png'
@@ -30,6 +22,15 @@ import aim from './aim.png'
 import userbig from './userbig.jpeg'
 import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
+import check from './check.png'
+
+import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
+import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
+import HotelPartner from './HotelPartner.png'
+import Play_Boll from './Play_Boll.png'
+import The_Traveler from './The_Traveler.png'
+import Turbo_Fix from './Turbo_Fix.png'
+import UNICON from './UNICON.png'
 
 import bootstrap from './bootstrap.png'
 import figma from './figma.png'
@@ -67,7 +68,8 @@ export const assets = {
     aim,
     userbig,
     design_icon,
-    development_icon
+    development_icon,
+    check
 }
 
 export const tools = [
