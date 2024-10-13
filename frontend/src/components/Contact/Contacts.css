@@ -27,6 +27,19 @@ input:-webkit-autofill {
 } */
 
 
+.label-active {
+    color: var(--stroke-color);
+    transition: 250ms ease-in-out;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: transparent !important;
+    border: none !important;
+  }
 /* ////////////////////// */
 
 .contact {

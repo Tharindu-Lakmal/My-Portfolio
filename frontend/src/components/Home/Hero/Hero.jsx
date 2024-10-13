@@ -47,17 +47,17 @@ const Hero = () => {
 
         <div className="scroller">
           <ul className="scroller_inner">
-            <li>Tharindu Lakaml</li>
+            <li>Tharindu Lakmal</li>
             <li>-</li>
             <li>Full Stack Developer</li>
             <li>&</li>
-            <li>UI/UX Designer  </li>
+            <li>UI/UX Designer - </li>
 
-            <li>Tharindu Lakaml</li>
+            <li>Tharindu Lakmal</li>
             <li>-</li>
             <li>Full Stack Developer</li>
             <li>&</li>
-            <li>UI/UX Designer  </li>
+            <li>UI/UX Designer - </li>
           </ul>
         </div>
 
