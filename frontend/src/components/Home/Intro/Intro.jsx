@@ -11,7 +11,7 @@ const Intro = () => {
             <div className="info-content">
                 <div className="left-side">
                     <p className="header-p">
-                        I’m a Software Engineering undergraduate at 
+                        I’m Tharindu Lakmal, a Software Engineering undergraduate at 
                         Sabaragamuwa University of Sri Lanka and 
                         passionate about designing and developing 
                         websites. 
