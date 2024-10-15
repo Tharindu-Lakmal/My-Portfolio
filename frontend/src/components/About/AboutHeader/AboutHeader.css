@@ -3,7 +3,8 @@
 }
 
 .aboutHeader-container {
-    margin: 80px 20px 0;
+    margin: 0 20px 0;
+    padding-block-start: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -104,7 +105,8 @@
 @media only screen and (min-width:540px) {
     
     .aboutHeader-container {
-        margin: 80px 50px;
+        margin: 0px 50px;
+        padding-block-start: 80px;
         gap: 24px;
     }
 }
@@ -113,7 +115,8 @@
 @media only screen and (min-width:768px) {
     
     .aboutHeader-container {
-        margin: 80px 70px;
+        margin: 0 70px 80px;
+        padding-block-start: 80px;
     }
 
     .about-main-header h2 {
@@ -135,7 +138,8 @@
 @media only screen and (min-width:992px) {
     
     .aboutHeader-container {
-        margin: 100px 100px;
+        margin: 0 100px 100px;
+        padding-block-start: 100px;
     }
 
     .aboutHeader .aboutHeader-header {
@@ -176,7 +180,8 @@
 @media only screen and (min-width:1200px) {
     
     .aboutHeader-container {
-        margin: 140px 120px;
+        margin: 0 120px 140px;
+        padding-block-start: 140px;
     }
 
     .aboutHeader .aboutHeader-header {
@@ -210,7 +215,8 @@
     }
     
     .aboutHeader-container {
-        margin: 140px 180px;
+        margin: 0 180px 140px;
+        padding-block-start: 140px;
     }
 
     .about-main-header h3 {
