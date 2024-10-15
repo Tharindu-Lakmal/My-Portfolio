@@ -5,12 +5,16 @@ import Home from './page/Home/Home'
 import Work from './page/Work/Work'
 import About from './page/About/About'
 import Contact from './page/Contact/Contact'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
   
 
   return (
     <div className='app'>
+
+      <NavBar />
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Work />} />

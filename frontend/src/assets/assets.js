@@ -23,6 +23,7 @@ import userbig from './userbig.jpeg'
 import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
+import logo from './logo.png'
 
 import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
 import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
@@ -69,7 +70,8 @@ export const assets = {
     userbig,
     design_icon,
     development_icon,
-    check
+    check,
+    logo
 }
 
 export const tools = [

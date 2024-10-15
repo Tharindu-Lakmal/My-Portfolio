@@ -24,10 +24,10 @@
 }
 
 .left-side .header-p {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.6px;
-    line-height: 28px;
+    line-height: 32px;
     color: var(--text-dark);
 }
 
@@ -35,18 +35,51 @@
     margin-block-end: 24px;
 }
 
-.info-content .about-btn {
-    padding: 40px 20px;
-    font-size: 16px;
+/* .info-content .magneto {
+    width: 10rem;
+    height: 10rem;
     border: none;
-    border-radius: 200px;
+    border-radius: 50%;
     color: var(--text-light);
     background-color: var(--button-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
 }
 
-.info-content .about-btn:is(:hover, :focus-visible) {
-    background-color: var(--button-active);
+.info-content .magneto-text {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: var(--text-light);
 }
+
+/* .info-content .magneto:is(:hover, :focus-visible) {
+    background-color: var(--button-active);
+} */
+
+
+/* .info-content .magneto::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--button-active);
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.info-content .magneto::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.info-content .magneto:is(:hover, :focus-visible)::before {
+    height: 100%;
+} */
 
 
 /* Responsive Styles */
@@ -81,7 +114,7 @@
     }
 
     .info-content .about-btn {
-        padding: 60px 40px;
+        padding: 64px 40px;
     }
 }
 
@@ -113,10 +146,6 @@
     
     .right-side .header-text {
         margin-block-end: 28px;
-    }
-    
-    .info-content .about-btn {
-        padding: 60px 40px;
     }
 }
 

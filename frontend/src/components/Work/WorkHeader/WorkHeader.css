@@ -4,7 +4,8 @@
 }
 
 .workHeader-container {
-    margin: 80px 20px 0;
+    margin: 0 20px 0;
+    padding-block-start: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -81,7 +82,8 @@
 @media only screen and (min-width:540px) {
     
     .workHeader-container {
-        margin: 80px 50px;
+        margin: 0 50px 80px;
+        padding-block-start: 80px;
         gap: 24px;
     }
     
@@ -94,7 +96,8 @@
 @media only screen and (min-width:768px) {
     
     .workHeader-container {
-        margin: 80px 70px;
+        margin: 0 70px 80px;
+        padding-block-start: 80px;
     }
 
     .workHeader-container .workHeader-img {
@@ -111,7 +114,8 @@
 @media only screen and (min-width:992px) {
     
     .workHeader-container {
-        margin: 100px 100px;
+        margin: 0 100px 100px;
+        padding-block-start: 100px;
         gap: 60px;
     }
 
@@ -143,7 +147,8 @@
 @media only screen and (min-width:1200px) {
     
     .workHeader-container {
-        margin: 140px 120px;
+        margin: 0 140px 120px;
+        padding-block-start: 140px;
     }
 
     .workHeader-container .workHeader-img {
@@ -164,7 +169,8 @@
     }
     
     .workHeader-container {
-        margin: 140px 180px;
+        margin: 0 180px 140px;
+        padding-block-start: 140px;
     }
 
     .workHeader-header h3 {

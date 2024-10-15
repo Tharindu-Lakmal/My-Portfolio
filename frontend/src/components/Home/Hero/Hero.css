@@ -1,3 +1,8 @@
+.hero iframe {
+    border: none;
+    width: 16px;
+    margin-block-start: 40px;
+}
 
 .hero {
     position: relative;
@@ -55,7 +60,7 @@
 
 .hero .user-container img {
     width: auto;
-    height: 100vh;
+    height: 95vh;
     bottom: 0;
 }
 
@@ -79,6 +84,8 @@
 
 .scroller_inner li {
     width: max-content;
+    display: flex;
+    flex-direction: row;
 }
 
 .scroller[data-animated="true"] {
@@ -101,6 +108,10 @@
 
 @media only screen and (min-width:540px) {
     
+    .hero iframe {
+        margin-block-start: 30px;
+    }
+
     .hero .text {
         top: 40vh;
     }
@@ -115,6 +126,10 @@
 
 @media only screen and (min-width:768px) {
     
+    .hero iframe {
+        margin-block-start: 40px;
+    }
+
     .scroller .scroller_inner {
         gap: 1rem;
         letter-spacing: 2px;
@@ -137,6 +152,11 @@
 
 @media only screen and (min-width:992px) {
     
+    .hero iframe {
+        width: 12px;
+        margin-block-start: -35px;
+    }
+
     .hero .text {
         position: relative;
         display: flex;
@@ -145,6 +165,7 @@
         width: 100%;
         min-height: 100vh;
         top: 0;
+        padding-inline-start: 0;
     }
     .first-header, .second-header {
         position: relative;
@@ -153,7 +174,7 @@
     }
     .first-header {
         flex-direction: row;
-        gap: 1.6rem;
+        gap: 1.8rem;
         font-size: 9vw;
         color: transparent;
         -webkit-text-stroke-color: var(--text-light);

@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
-import './Intro.css'
-import CircleBtn from '../../btn/circleBtn';
+import './CircleBtn.css'
 
-const Intro = () => {
+const CircleBtn = () => {
 
     const magnetoRef = useRef(null);
     const magnetoTextRef = useRef(null);
@@ -70,42 +69,12 @@ const Intro = () => {
 
 
   return (
-    <div className='info'>
-        <div className="info-container">
-
-            <h2 className="header">Introducing myself</h2>
-            
-            <div className="info-content">
-                <div className="left-side">
-                    <p className="header-p">
-                        I’m Tharindu Lakmal, a Software Engineering undergraduate and 
-                        passionate about designing and developing 
-                        websites. 
-                    </p>
-                    <p className="header-p">
-                        I develop web application and user 
-                        friendly designs with modern technologies 
-                        like React, Node.js, and Figma.
-                    </p>
-                </div>
-                <div className="right-side">
-                    <p className="header-text">
-                        Let’s build websites that not only look great but 
-                        deliver seamless user experiences, bringing the 
-                        vision to life.
-                    </p>
-
-                    {/* <button className='magneto' ref={magnetoRef}>
-                        <span className='magneto-text' ref={magnetoTextRef}>About me</span>
-                    </button> */}
-                    
-                    <CircleBtn />
-
-                </div>
-            </div>
-        </div>
+    <div className='circleBtn'>
+        <button className='magneto' ref={magnetoRef}>
+            <span className='magneto-text' ref={magnetoTextRef}>About me</span>
+        </button>
     </div>
   )
 }
 
-export default Intro
+export default CircleBtn
