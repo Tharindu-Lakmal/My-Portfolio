@@ -18,13 +18,19 @@ const Footer = () => {
 
             <div className="footer-contact">
               
-              <button className="footer-btn btn-light">Contact me</button>
+              <button className="footer-btn">
+                <p>Contact me</p>
+              </button>
 
               <div className="contact-link">
-                <button className="email btn-light">tharindulakmal.k7@gmail.com</button>
-                <button className="phone btn-light">
-                  Find me
-                  <img src={assets.whatsapp} alt="" />
+                <button className="email linkBtn">
+                  <p>tharindulakmal.k7@gmail.com</p>
+                </button>
+                <button className="phone linkBtn">
+                  <p>
+                    Find me
+                    <img src={assets.whatsapp} alt="" />
+                  </p>
                 </button>
               </div>
 

@@ -73,7 +73,7 @@ const Intro = () => {
     <div className='info'>
         <div className="info-container">
 
-            <h2 className="header">Introducing myself</h2>
+            {/* <h2 className="header">Introducing myself</h2> */}
             
             <div className="info-content">
                 <div className="left-side">
