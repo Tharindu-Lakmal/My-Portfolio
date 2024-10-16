@@ -1,6 +1,9 @@
 /* Font Styel */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* --bg-hero: rgb(176, 185, 182);  */
+/* --bg-hero: rgb(161, 167, 164); */
+
 :root {
   --bg-hero: rgb(176, 185, 182);
   --bg-hero-light: rgb(227, 231, 230);

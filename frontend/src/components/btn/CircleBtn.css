@@ -43,3 +43,7 @@
 .magneto:is(:hover, :focus-visible)::before {
     height: 100%;
 }
+
+.circleBtn a:is(:hover, :focus-visible) {
+    text-decoration: none;
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './CircleBtn.css'
+import { Link } from 'react-router-dom';
 
 const CircleBtn = () => {
 
@@ -70,9 +71,11 @@ const CircleBtn = () => {
 
   return (
     <div className='circleBtn'>
-        <button className='magneto' ref={magnetoRef}>
-            <span className='magneto-text' ref={magnetoTextRef}>About me</span>
-        </button>
+        <Link to = "/about">
+            <button className='magneto' ref={magnetoRef}>
+                <span className='magneto-text' ref={magnetoTextRef}>About me</span>
+            </button>
+        </Link>
     </div>
   )
 }

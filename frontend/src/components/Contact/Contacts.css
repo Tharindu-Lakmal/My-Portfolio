@@ -149,6 +149,7 @@ input:-webkit-autofill:active {
     width: fit-content;
     bottom: -120px;
     right: 80%;
+    font-size: 16px;
 }
 
 
@@ -162,6 +163,10 @@ input:-webkit-autofill:active {
     justify-content: space-between;
     padding: 32px 0;
     margin-block-start: 32px;
+}
+
+.contact-footer a {
+    font-size: 14px;
 }
 
 
