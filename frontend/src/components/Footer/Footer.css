@@ -96,13 +96,17 @@
 }
 
 .contact-link p,
-.footer-btn p {
+.footer-btn a {
     color: var(--text-light);
     z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
+}
+.footer-btn a:is(:hover, :focus-visible) {
+    text-decoration: none;
 }
 
 

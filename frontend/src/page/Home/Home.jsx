@@ -11,7 +11,7 @@ import PageLoader from '../../components/PageLoader/PageLoader'
 const Home = () => {
   return (
     <div className='home'>
-        <PageLoader />
+        <PageLoader pageName="Home" />
         <Hero />
         <Intro />
         <Skills />

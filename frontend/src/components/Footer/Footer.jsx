@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   
@@ -19,7 +20,7 @@ const Footer = () => {
             <div className="footer-contact">
               
               <button className="footer-btn">
-                <p>Contact me</p>
+                <Link to = '/contact'>Contact me</Link>
               </button>
 
               <div className="contact-link">
