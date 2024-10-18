@@ -12,8 +12,8 @@ const CircleBtn = () => {
         const magneto = magnetoRef.current;
         const magnetoText = magnetoTextRef.current;
 
-        const magnetoStrength = 40;
-        const magnetoTextStrenth = 80;
+        const magnetoStrength = 60;
+        const magnetoTextStrenth = 100;
 
         const activateMagneto = (event) => {
             const boundBox = magneto.getBoundingClientRect();
@@ -23,7 +23,7 @@ const CircleBtn = () => {
 
             // Move the button to its new position
             gsap.to(magneto, {
-                duration: 1,
+                duration: -10,
                 x: newX * magnetoStrength,
                 y: newY * magnetoStrength,
                 ease: Power4.easeOut,
@@ -39,7 +39,7 @@ const CircleBtn = () => {
 
         const resetMagneto = () => {
             gsap.to(magneto, {
-                duration: 1,
+                duration: -10,
                 x: 0,
                 y: 0,
                 ease: Elastic.easeOut,

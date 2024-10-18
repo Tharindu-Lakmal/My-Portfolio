@@ -7,6 +7,21 @@ import { assets } from '../../../assets/assets'
 const Hero = () => {
 
   useEffect(() => {
+    const scroller_heading = document.querySelectorAll('.text h1');
+
+    function handleScroller() {
+      let scrolled = window.scrollY;
+
+      if (scrolled < 780) {
+        scroller_heading[0].style.left = `${scrolled / 6}%`;
+        scroller_heading[1].style.right = `${scrolled / 6}%`;
+      }
+    }
+
+    window.addEventListener('scroll', handleScroller);
+  }, [])
+
+  useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
     if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

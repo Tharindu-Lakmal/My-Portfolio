@@ -83,6 +83,7 @@
 }
 
 .btn-work {
+    position: relative;
     color: var(--text-light);
     padding: 24px 32px;
     border: none;
@@ -90,7 +91,37 @@
     background-color: var(--button-normal);
     width: fit-content;
     margin: 40px auto 0;
-  }
+    overflow: hidden;
+}
+
+.btn-work a {
+    position: relative;
+    z-index: 100;
+}
+
+.btn-work a:is(:hover, :focus-visible) {
+    text-decoration: none;
+}
+
+.btn-work::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--button-active);
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-work::before {
+    bottom: 0;
+    border-radius: 100% 100% 0 0;
+}
+
+.btn-work:is(:hover, :focus-visible)::before {
+    height: 120%;
+}
 
 
 

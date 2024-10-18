@@ -1,6 +1,8 @@
 import React from 'react'
 import './Work.css'
 import { top_work } from '../../../assets/assets'
+import { Link } from 'react-router-dom'
+
 
 const Work = () => {
   return (
@@ -42,7 +44,11 @@ const Work = () => {
                 })}
             </div>
 
-            <button className="btn-work btn-dark">More work</button>
+            
+            <button className="btn-work btn-dark">
+                <Link to = '/work'>More work</Link>
+            </button>
+            
         </div>
     </div>
   )

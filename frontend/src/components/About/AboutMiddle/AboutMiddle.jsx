@@ -3,6 +3,7 @@ import './AboutMiddle.css'
 import { assets } from '../../../assets/assets'
 
 const AboutMiddle = () => {
+
   return (
     <div className='aboutMiddle'>
         

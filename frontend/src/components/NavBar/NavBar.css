@@ -18,11 +18,14 @@
 
 .navBar-container .logo {
     width: 35vw;
-    margin: 3vh;
+    margin: 5vh 3vh;
     max-width: 12rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+
+    transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 .navBar-container .logo p {

@@ -26,7 +26,7 @@ const NavBar = () => {
 
             // Move the button to its new position
             gsap.to(magnetoMini, {
-                duration: 1,
+                duration: -100,
                 x: newX * magnetoStrength,
                 y: newY * magnetoStrength,
                 ease: Power4.easeOut,
@@ -42,7 +42,7 @@ const NavBar = () => {
 
         const resetMagneto = () => {
             gsap.to(magnetoMini, {
-                duration: 1,
+                duration: -100,
                 x: 0,
                 y: 0,
                 ease: Elastic.easeOut,
@@ -70,6 +70,21 @@ const NavBar = () => {
             }
         };
     }, []);
+
+
+    useEffect(() => {
+        const navLogo = document.querySelector('.logo');
+
+        function logoHandler() {
+            let scrolled = window.scrollY;
+
+            if (scrolled < 400) {
+                navLogo.style.right = `${scrolled / 6}%`;
+            } 
+        }
+
+        window.addEventListener('scroll', logoHandler);
+    })
 
   return (
     <div className='navBar'>

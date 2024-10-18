@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/jlo7dqv.css");
+/* @import url("https://use.typekit.net/jlo7dqv.css"); */
 
 .pageLoader {
     position: absolute;
@@ -27,7 +27,7 @@
 }
   
 .page-loader h1 {
-    font-family: "baloo-bhaina-2", sans-serif;
+    /* font-family: "baloo-bhaina-2", sans-serif; */
     font-style: normal;
     font-size: 2rem;
     font-weight: 400;
