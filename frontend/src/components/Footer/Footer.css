@@ -125,6 +125,11 @@
     overflow: hidden;
     transition: 0.4s ease-in-out;
 }
+.linkBtn a,
+.linkBtn a:is(:hover, :focus-visible) {
+    z-index: 100;
+    text-decoration: none;
+}
 
 .linkBtn::before,
 .footer-btn::before {
@@ -146,7 +151,7 @@
 
 .linkBtn:is(:hover, :focus-visible),
 .footer-btn:is(:hover, :focus-visible) {
-    border: none;
+    border: 1px solid var(--text-dark);
 }
 
 .linkBtn:is(:hover, :focus-visible)::before,

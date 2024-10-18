@@ -24,8 +24,8 @@ const Footer = () => {
               </button>
 
               <div className="contact-link">
-                <button className="email linkBtn">
-                  <p>tharindulakmal.k7@gmail.com</p>
+                <button  className="email linkBtn">
+                  <a href="mailto:tharindulakmal.k7@gmail.com">tharindulakmal.k7@gmail.com</a>
                 </button>
                 <button className="phone linkBtn">
                   <p>

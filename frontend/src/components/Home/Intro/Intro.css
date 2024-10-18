@@ -81,6 +81,11 @@
     height: 100%;
 } */
 
+.CircleBtn {
+    position: relative;
+    transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
 
 /* Responsive Styles */
 

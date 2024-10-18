@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './Intro.css'
-import CircleBtn from '../../btn/circleBtn';
+import CircleBtn from '../../btn/CircleBtn';
 
 const Intro = () => {
 
@@ -69,6 +69,21 @@ const Intro = () => {
     }, []);
 
 
+    useEffect(() => {
+        const btn_scroller = document.querySelector('.CircleBtn');
+
+        function handleScroller() {
+            let scrolled = (window.scrollY)/6;
+      
+            if (scrolled < 380) {
+                btn_scroller.style.left = `${scrolled / 4}%`;
+            }
+          }
+      
+          window.addEventListener('scroll', handleScroller);
+    },[]);
+
+
   return (
     <div className='info'>
         <div className="info-container">
@@ -98,8 +113,12 @@ const Intro = () => {
                     {/* <button className='magneto' ref={magnetoRef}>
                         <span className='magneto-text' ref={magnetoTextRef}>About me</span>
                     </button> */}
+
+                    <div className="CircleBtn">
+                        <CircleBtn />
+                    </div>
                     
-                    <CircleBtn />
+                    
 
                 </div>
             </div>
