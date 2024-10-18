@@ -1,43 +1,72 @@
 import React, { useState, useEffect } from 'react';
 import './PageLoader.css'
 
-const languages = ['Hello', 'ආයුබෝවන්', '你好', 'வணக்கம்', 'नमस्ते', 'Bonjour', '안녕하세요', 'مرحبا', 'こんにちは'];
+const languages = ['Hello', 'ආයුබෝවන්', 'வணக்கம்', '你好', 'नमस्ते', 'Bonjour', '안녕하세요', 'مرحبا', 'こんにちは'];
 
-const PageLoader = () => {
+const PageLoader = ({ pageName }) => {
 
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isClosing, setIsClosing] = useState(false);
+    const [isFirstLoad, setIsFirstLoad] = useState(true);
 
     useEffect(() => {
 
-        let intervalDuration = 150; // Default for non-English languages
+        // Check if the loader has already been shown
+        const hasLoadedBefore = sessionStorage.getItem('hasLoadedBefore');
+        
+        if (hasLoadedBefore && pageName !== 'Home') {
 
-        if (currentTextIndex === 0) {
-            intervalDuration = 1200; // Longer duration for English "Hello"
+            // If not the first load, show only the page name
+            setIsFirstLoad(false);
+            setCurrentTextIndex(-1); // No languages, skip to pageName loader
+
+            const timeout = setTimeout(() => 
+                setIsClosing(true)
+            , 1200); // Close loader with page name
+
+            return () => clearTimeout(timeout);
+
         }
+        
+        else {
+            // If first time loading the website or user is on the home page, display languages
+            if (!hasLoadedBefore && pageName == 'home') {
+                sessionStorage.setItem('hasLoadedBefore', 'true'); // Mark first-time load in sessionStorage
+            }
 
-        if (currentTextIndex < languages.length - 1) {
-            // Cycle through the languages with appropriate timing
-            const interval = setInterval(() => {
-                setCurrentTextIndex(prev => prev + 1);
-        }, intervalDuration); // Use different durations
+            let intervalDuration = 190;
 
-        return () => clearInterval(interval); // Clean up interval
+            if (currentTextIndex === 0) {
+                intervalDuration = 1200; // Longer duration for English "Hello"
+            }
 
-        } else {
-            // After showing all languages, start closing animation
-            const timeout = setTimeout(() => {
-                setIsClosing(true);
-        }, intervalDuration);
+            if (currentTextIndex < languages.length - 1) {
+                // Cycle through the languages
+                const interval = setInterval(() => {
+                    setCurrentTextIndex(prev => prev + 1);
+                }, intervalDuration);
 
-        return () => clearTimeout(timeout); // Clean up timeout
+                return () => clearInterval(interval); // Clean up interval
+
+            } else {
+                // After showing all languages, start closing animation
+                const timeout = setTimeout(() => {
+                    setIsClosing(true);
+                }, intervalDuration);
+
+                return () => clearTimeout(timeout); // Clean up timeout
+            }
         }
-    }, [currentTextIndex]);
+    }, [currentTextIndex, pageName]);
     
     return (
         <div className="pageLoader">
             <div className={`page-loader ${isClosing ? 'closing' : ''}`}>
-                <h1>{languages[currentTextIndex]}</h1>
+                {isFirstLoad && currentTextIndex >= 0 ? (
+                    <h1>{languages[currentTextIndex]}</h1>
+                ) : (
+                    <h1>{pageName}</h1>
+                )}
             </div>
         </div>
     );

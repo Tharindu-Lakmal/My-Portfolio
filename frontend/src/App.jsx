@@ -6,6 +6,7 @@ import Work from './page/Work/Work'
 import About from './page/About/About'
 import Contact from './page/Contact/Contact'
 import NavBar from './components/NavBar/NavBar'
+import PageLoader from './components/PageLoader/PageLoader'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='app'>
 
+      <PageLoader pageName={'home'} />
       <NavBar />
       
       <Routes>
