@@ -77,6 +77,7 @@ const Intro = () => {
       
             if (scrolled < 380) {
                 btn_scroller.style.left = `${scrolled / 4}%`;
+                btn_scroller.style.bottom = `${scrolled / 6}%`;
             }
           }
       

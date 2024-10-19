@@ -24,6 +24,7 @@ import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
 import logo from './logo.svg'
+import github from './github.svg'
 
 import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
 import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
@@ -159,7 +160,9 @@ export const top_work = [
         name: "FOOD BUDDY",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
-        Link: ""
+        git_icon: github,
+        Link: "",
+        Git_link: ""
     },
     {
         card_img: playBoll,
@@ -167,7 +170,9 @@ export const top_work = [
         name: "Play Boll",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        Link: ""
+        git_icon: github,
+        Link: "",
+        Git_link: ""
     },
     {
         card_img: traveller,
@@ -175,7 +180,9 @@ export const top_work = [
         name: "The Traveller",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB", "Bootstrap"],
-        Link: ""
+        git_icon: github,
+        Link: "",
+        Git_link: ""
     },
     {
         card_img: turbofix,
@@ -183,7 +190,9 @@ export const top_work = [
         name: "TurboFix",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
-        Link: ""
+        git_icon: github,
+        Link: "",
+        Git_link: ""
     },
 ]
 

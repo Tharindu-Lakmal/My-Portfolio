@@ -113,6 +113,7 @@ input:-webkit-autofill:active {
     flex-direction: column;
     gap: 8px;
     width: 100%;
+    margin-block-start: -2px;
 }
 
 .contact-form .form-input .list-number {
@@ -122,7 +123,7 @@ input:-webkit-autofill:active {
 }
 
 .contact-form .form-data label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.6px;
 }
@@ -132,7 +133,7 @@ input:-webkit-autofill:active {
     color: var(--text-light);
     background-color: transparent;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
 }
 
@@ -145,7 +146,7 @@ input:-webkit-autofill:active {
 }
 
 .input-tbn input {
-    position: absolute;
+    position: relative;
     width: fit-content;
     bottom: -120px;
     right: 80%;
@@ -153,9 +154,19 @@ input:-webkit-autofill:active {
 }
 
 
-.input-tbn .btn-active {
+.input-tbn .active-btn {
     padding: 42px 34px;
+    color: var(--text-light);
+    border: 1px solid var(--button-active);
+    border-radius: 100px;
+    font-size: 16px;
+    background-color: var(--button-active);
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
 }
+
+
 
 .contact-footer {
     display: flex;
@@ -308,7 +319,7 @@ input:-webkit-autofill:active {
         right: 50%;
     }
 
-    .input-tbn .btn-active {
+    .input-tbn .active-btn {
         padding: 70px 64px;
     }
 

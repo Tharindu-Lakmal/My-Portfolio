@@ -25,7 +25,7 @@
     justify-content: center;
     position: relative;
 
-    transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
+    transition: 1.4s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 .navBar-container .logo p {
@@ -55,6 +55,7 @@
     gap: 16px;
     padding: 120px 32px 32px 32px;
     animation: 0.4s ease-in-out forwards navOpen;
+    overflow-y: scroll;
 }
 
 @keyframes navOpen {
@@ -110,6 +111,29 @@
     font-weight: 400;
     letter-spacing: 1px;
     text-decoration: none;
+}
+.nav-middle ul li a:is(:hover, :focus-visible)::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-light);
+    right: 0;
+    margin-top: 10px;
+    margin-left: -24px;
+}
+
+.nav-middle ul li a.active-nav::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-light);
+    right: 0;
+    margin-top: 10px;
+    margin-left: -24px;
 }
 
 .nav-bottom {
@@ -320,7 +344,7 @@
     
     .nav-links {
         gap: 22px;
-        padding: 120px 42px 42px;
+        padding: 120px 64px 64px;
     }
 
     .nav-top {
@@ -328,7 +352,7 @@
     }
 
     .nav-middle ul {
-        gap: 38px;
+        gap: 48px;
         margin-block-start: 32px;
     }
     
@@ -342,7 +366,7 @@
     }
 
     .nav-middle ul li a {
-        font-size: 3.7rem;
+        font-size: 3.9rem;
         font-weight: 400;
         letter-spacing: 1px;
         text-decoration: none;

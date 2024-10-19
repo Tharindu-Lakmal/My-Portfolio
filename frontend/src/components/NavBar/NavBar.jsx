@@ -79,7 +79,7 @@ const NavBar = () => {
             let scrolled = window.scrollY;
 
             if (scrolled < 400) {
-                navLogo.style.right = `${scrolled / 6}%`;
+                navLogo.style.right = `${scrolled / 2}%`;
             } 
         }
 
@@ -103,10 +103,18 @@ const NavBar = () => {
 
                 <div className="nav-middle">
                     <ul className="nav-links-inner">
-                        <li onClick={() => setNavActive(false)} className="nav-link"><NavLink to = '/' style={({ isActive }) => {return isActive ? { fontSize: "3.9rem" } : {}; }}>Home</NavLink></li>
-                        <li onClick={() => setNavActive(false)} className="nav-link"><NavLink to = '/work' style={({ isActive }) => {return isActive ? { fontSize: "3.9rem" } : {}; }}>Work</NavLink></li>
-                        <li onClick={() => setNavActive(false)} className="nav-link"><NavLink to = '/about' style={({ isActive }) => {return isActive ? { fontSize: "3.9rem" } : {}; }}>About</NavLink></li>
-                        <li onClick={() => setNavActive(false)} className="nav-link"><NavLink to = '/contact' style={({ isActive }) => {return isActive ? { fontSize: "3.9rem" } : {}; }}>Contact</NavLink></li>
+                        <li onClick={() => setNavActive(false)} className="nav-link">
+                            <NavLink to = '/' className={({ isActive }) => isActive ? 'active-nav' : ''}>Home</NavLink>
+                        </li>
+                        <li onClick={() => setNavActive(false)} className="nav-link">
+                            <NavLink to = '/work' className={({ isActive }) => isActive ? 'active-nav' : ''}>Work</NavLink>
+                        </li>
+                        <li onClick={() => setNavActive(false)} className="nav-link">
+                            <NavLink to = '/about' className={({ isActive }) => isActive ? 'active-nav' : ''}>About</NavLink>
+                        </li>
+                        <li onClick={() => setNavActive(false)} className="nav-link">
+                            <NavLink to = '/contact' className={({ isActive }) => isActive ? 'active-nav' : ''}>Contact</NavLink>
+                        </li>
                     </ul>
                 </div>
 
