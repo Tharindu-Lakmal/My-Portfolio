@@ -23,7 +23,7 @@ const Work = () => {
                             <div className="work-content">
 
                                 <div className="work-top">
-                                    <p className="category">{item.category}</p>
+                                    <p className="category">{item.category} <span><a href={item.Git_link}><img src={item.git_icon} alt="" /></a></span></p>
                                     <h2 className="name">{item.name}</h2>
                                 </div>
                                 <div className="work-bottom">

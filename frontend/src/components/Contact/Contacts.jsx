@@ -122,7 +122,7 @@ const Contacts = () => {
                   </div>
 
                   <div className="input-tbn">
-                    <input className='btn-active' type="submit" value="Send" />
+                    <input className='active-btn' type="submit" value="Send" />
                   </div>
 
                 </form>

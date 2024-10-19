@@ -12,6 +12,7 @@
 .works-content {
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 .work {
@@ -19,7 +20,6 @@
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(auto, 2fr));
     gap: 4px;
-    cursor: pointer;
 }
 
 .work-container .work {
@@ -56,6 +56,11 @@
 .work-top .name {
     color: var(--text-dark);
     font-size: var(--font-medium);
+}
+
+.work-top .category img {
+    width: 16px;
+    position: relative;
 }
 
 .work-bottom {
@@ -245,6 +250,11 @@
         margin: 0 100px;
         gap: 28px;
     }
+
+    .works-content {
+        gap: 42px;
+    }
+
     .work {
         gap: 42px;
     }
