@@ -62,19 +62,23 @@ const Hero = () => {
 
         <div className="scroller">
           <ul className="scroller_inner">
-            <li>Tharindu Lakmal</li>
-            <li>-</li>
+            <li> Tharindu Lakmal</li>
+            <li>—</li>
             <li>Full Stack Developer</li>
-            <li>&</li>
+            <li><b> ; </b></li>
             <li>UI/UX Designer</li>
-            <li><iframe src="https://lottie.host/embed/806215a2-76dc-4b0f-8c75-8dd1e512e288/YJ2xJFrTDy.json"></iframe></li>
+            <li>
+              <iframe src="https://lottie.host/embed/806215a2-76dc-4b0f-8c75-8dd1e512e288/YJ2xJFrTDy.json"></iframe>
+            </li>
 
-            <li>Tharindu Lakmal</li>
-            <li>-</li>
+            <li> Tharindu Lakmal</li>
+            <li>—</li>
             <li>Full Stack Developer</li>
-            <li>&</li>
+            <li><b> ; </b></li>
             <li>UI/UX Designer</li>
-            <li><iframe src="https://lottie.host/embed/806215a2-76dc-4b0f-8c75-8dd1e512e288/YJ2xJFrTDy.json"></iframe></li>
+            <li>
+              <iframe src="https://lottie.host/embed/806215a2-76dc-4b0f-8c75-8dd1e512e288/YJ2xJFrTDy.json"></iframe>
+            </li>
           </ul>
         </div>
 

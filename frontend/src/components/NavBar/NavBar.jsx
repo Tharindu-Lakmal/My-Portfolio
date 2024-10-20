@@ -3,7 +3,7 @@ import { gsap, Elastic, Power4 } from 'gsap';
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({page}) => {
 
     const [navActive, setNavActive] = useState(false);
 
@@ -92,7 +92,9 @@ const NavBar = () => {
 
             <div className="logo">
                 <Link to = '/'>
-                    <p>Tharindu Lakmal.</p>
+                    <p className={page == 'pure'? "":"dark"}>
+                        Tharindu—Lakmal.
+                    </p>
                 </Link>
             </div>
 

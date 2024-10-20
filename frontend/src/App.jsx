@@ -5,7 +5,6 @@ import Home from './page/Home/Home'
 import Work from './page/Work/Work'
 import About from './page/About/About'
 import Contact from './page/Contact/Contact'
-import NavBar from './components/NavBar/NavBar'
 import PageLoader from './components/PageLoader/PageLoader'
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
     <div className='app'>
 
       <PageLoader pageName={'home'} />
-      <NavBar />
       
       <Routes>
         <Route path='/' element={<Home />} />
