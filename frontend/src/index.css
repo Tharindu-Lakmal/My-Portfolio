@@ -1,9 +1,6 @@
 /* Font Styel */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* @import url("https://use.typekit.net/jlo7dqv.css"); */
-
-/* @import url("https://use.typekit.net/jlo7dqv.css"); */
 
 /* --bg-hero: rgb(176, 185, 182);  */
 /* --bg-hero: rgb(161, 167, 164); */
@@ -37,8 +34,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter Tight", sans-serif;
-  /* font-family: "alumni-sans", sans-serif; */
-  /* font-family: "anek-latin-variable", sans-serif; */
 }
   
 body {

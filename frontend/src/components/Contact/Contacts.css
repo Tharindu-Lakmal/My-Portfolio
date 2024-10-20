@@ -155,7 +155,7 @@ input:-webkit-autofill:active {
 
 
 .input-tbn .active-btn {
-    padding: 42px 34px;
+    padding: 45px 36px;
     color: var(--text-light);
     border: 1px solid var(--button-active);
     border-radius: 100px;
@@ -195,6 +195,17 @@ input:-webkit-autofill:active {
 }
 
 
+.Optional {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    color: var(--stroke-color);
+}
+.error-message {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    color: rgb(230, 57, 70);
+}
 
 
 
@@ -320,7 +331,7 @@ input:-webkit-autofill:active {
     }
 
     .input-tbn .active-btn {
-        padding: 70px 64px;
+        padding: 70px 62px;
     }
 
     ::placeholder {
@@ -329,6 +340,13 @@ input:-webkit-autofill:active {
 
     .contact-footer {
         margin-block-start: 100px;
+    }
+
+    .Optional {
+        font-size: 24px;
+    }
+    .error-message {
+        font-size: 18px;
     }
 
 }

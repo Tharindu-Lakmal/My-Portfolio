@@ -7,11 +7,13 @@ import Work from '../../components/Home/Work/Work'
 import ImageSlider from '../../components/Home/ImageSlider/ImageSlider'
 import Footer from '../../components/Footer/Footer'
 import PageLoader from '../../components/PageLoader/PageLoader'
+import NavBar from '../../components/NavBar/NavBar'
 
 const Home = () => {
   return (
     <div className='home'>
         <PageLoader pageName="Home" />
+        <NavBar page = 'pure' />
         <Hero />
         <Intro />
         <Skills />

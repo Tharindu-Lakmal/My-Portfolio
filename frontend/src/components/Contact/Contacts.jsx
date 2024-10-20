@@ -15,12 +15,50 @@ const Contacts = () => {
     message: ''
   });
 
+  const [errors, setErrors] = useState({
+    user_name: '',
+    user_email: '',
+    message: '',
+  });
+
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputValues({
       ...inputValue,
       [name]: value
     });
+
+    setErrors({
+      ...errors,
+      [name]: '' // Clear error message when user starts typing
+    });
+  };
+
+
+  // Regex to validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+  // Validate function
+  const validateForm = () => {
+    const newErrors = {};
+    if (!inputValue.user_name) {
+      newErrors.user_name = 'Please fill in your name.';
+    }
+    if (!inputValue.user_email) {
+      newErrors.user_email = 'Please fill in your email.';
+    } else if (!emailRegex.test(inputValue.user_email)) {
+      newErrors.user_email = 'Please provide a valid email address.';
+    }
+    if (!inputValue.message) {
+      newErrors.message = 'Please leave a message.';
+    }
+
+    setErrors(newErrors);
+    
+    // Check if there are no errors
+    return Object.keys(newErrors).length === 0;
   };
 
 
@@ -34,22 +72,24 @@ const Contacts = () => {
     e.preventDefault();
 
 
-    emailjs
-      .sendForm('service_5tzgcim', 'template_wzfogcf', form.current, {
-        publicKey: 'wDCkqO0-WBqsdV0ic',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          console.log('Mail send successfully');
-
-          window.location.reload();
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          console.log('Mail failed to sent');
-        },
-      );
+    // Validate form before sending
+    if (validateForm()) {
+      emailjs
+        .sendForm('service_5tzgcim', 'template_wzfogcf', form.current, {
+          publicKey: 'wDCkqO0-WBqsdV0ic',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            console.log('Mail sent successfully');
+            window.location.reload();
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            console.log('Mail failed to send');
+          },
+        );
+    }
   };
 
 
@@ -76,6 +116,7 @@ const Contacts = () => {
                         What is your name?
                       </label>
                       <input onChange={handleInputChange} value={inputValue.user_name} type="text" name="user_name" placeholder='Kasun Tharuka' />
+                      {errors.user_name && <p className="error-message">{errors.user_name}</p>}
                     </div>
                   </div>
 
@@ -86,6 +127,7 @@ const Contacts = () => {
                         What is your email?
                       </label>
                       <input onChange={handleInputChange} value={inputValue.user_email} type="email" name="user_email" placeholder='kasuntharuka@gmail.com' />
+                      {errors.user_email && <p className="error-message">{errors.user_email}</p>}
                     </div>
                   </div>
 
@@ -93,7 +135,7 @@ const Contacts = () => {
                     <span className='list-number'>03</span>
                     <div className="form-data">
                       <label className={`label ${inputValue.user_company ? 'label-active' : ''}`}>
-                        What is your location?
+                        What is your location? <span className='Optional'>(Optional)</span>
                       </label>
                       <input onChange={handleInputChange} value={inputValue.user_company} type="text" name="user_company" placeholder='Kandy' />
                     </div>
@@ -117,9 +159,13 @@ const Contacts = () => {
                       </label>
                       <div className='textArea'>
                         <textarea onChange={handleInputChange} value={inputValue.message} name="message" placeholder='Hello Lakmal, can you help me with...' />
+                        {errors.message && <p className="error-message">{errors.message}</p>}
                       </div>
                     </div>
                   </div>
+
+
+                  
 
                   <div className="input-tbn">
                     <input className='active-btn' type="submit" value="Send" />

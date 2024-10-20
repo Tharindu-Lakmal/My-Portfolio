@@ -88,6 +88,7 @@
     width: max-content;
     display: flex;
     flex-direction: row;
+    white-space: pre;
 }
 
 .scroller[data-animated="true"] {
