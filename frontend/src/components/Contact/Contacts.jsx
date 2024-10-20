@@ -164,9 +164,6 @@ const Contacts = () => {
                     </div>
                   </div>
 
-
-                  
-
                   <div className="input-tbn">
                     <input className='active-btn' type="submit" value="Send" />
                   </div>
@@ -177,7 +174,7 @@ const Contacts = () => {
             </div>
 
             <div className="contact-footer">
-              <a href='#'>tharindulakmal.k8@gmail.com</a>
+              <a href='mailto:tharindulakmal.k8@gmail.com'>tharindulakmal.k8@gmail.com</a>
               <div className="social">
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
                 <a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank' className="social-link">LinkdIn</a>

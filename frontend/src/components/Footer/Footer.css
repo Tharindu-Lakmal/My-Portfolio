@@ -46,7 +46,7 @@
 }
 
 .footer-contact .footer-btn {
-    padding: 64px 30px;
+    padding: 64px 32px;
     position: absolute;
     right: 8%;
     top: -25%;
@@ -59,7 +59,9 @@
     margin-block-start: 72px;
 }
 
-.contact-link .phone, .contact-link .email {
+.contact-link .phone, 
+.contact-link .email,
+.contact-link .phone a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,7 +70,7 @@
 }
 
 .contact-link .phone img {
-    width: 20px;
+    width: 26px;
 }
 
 .social-links {
