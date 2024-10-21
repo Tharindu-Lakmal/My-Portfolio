@@ -24,7 +24,7 @@ import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
 import logo from './logo.svg'
-import github from './github.svg'
+import github from './github.png'
 
 import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
 import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
@@ -98,6 +98,7 @@ export const all_work = [
         name: "FOOD BUDDY",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -106,6 +107,7 @@ export const all_work = [
         name: "The Traveler",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -114,6 +116,7 @@ export const all_work = [
         name: "Play Boll",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -122,6 +125,7 @@ export const all_work = [
         name: "FOOD BUDDY",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -130,6 +134,7 @@ export const all_work = [
         name: "Turbo Fix",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -138,6 +143,7 @@ export const all_work = [
         name: "Hotel Partner",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: ""
     },
     {
@@ -146,6 +152,7 @@ export const all_work = [
         name: "UNICON",
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: ""
     }
 ]
@@ -161,8 +168,7 @@ export const top_work = [
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
-        Link: "",
-        Git_link: ""
+        Link: ""
     },
     {
         card_img: playBoll,
@@ -171,8 +177,7 @@ export const top_work = [
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
         git_icon: github,
-        Link: "",
-        Git_link: ""
+        Link: ""
     },
     {
         card_img: traveller,
@@ -181,8 +186,7 @@ export const top_work = [
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB", "Bootstrap"],
         git_icon: github,
-        Link: "",
-        Git_link: ""
+        Link: ""
     },
     {
         card_img: turbofix,
@@ -191,8 +195,7 @@ export const top_work = [
         description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
-        Link: "",
-        Git_link: ""
+        Link: ""
     },
 ]
 

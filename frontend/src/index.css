@@ -14,7 +14,7 @@
   --text-light-extra: rgb(255, 255, 255, 0.6);
   --text-dark: rgb(22, 26, 32);
   --text-dark-light: rgb(22, 26, 32, 0.9);
-  --text-dark-extra-light: rgb(22, 26, 32, 0.6);
+  --text-dark-extra-light: rgba(22, 26, 32, 0.6);
 
   --stroke-color: rgb(176, 185, 182, 0.5);
   --stroke-color-light: rgb(176, 185, 182, 0.3);
@@ -22,6 +22,7 @@
   --button-normal: rgb(22, 26, 32);
   --button-normal-light: rgb(255, 255, 255);
   --button-active: rgb(92, 51, 222);
+  --button-active-extra: rgb(85, 48, 207);
 
   --font-small: 18px;
   --font-extra-amall: 12px;

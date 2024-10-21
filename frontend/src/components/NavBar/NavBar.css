@@ -114,9 +114,9 @@
 }
 
 .nav-middle ul li a {
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-decoration: none;
 }
 .nav-middle ul li a:is(:hover, :focus-visible)::after {
