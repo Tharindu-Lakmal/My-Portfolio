@@ -17,13 +17,16 @@ const Work = () => {
                         <div className="work" key={index}>
 
                             <div className="work-img">
+                                <div className="view-btn">
+                                    <button><a href={item.Link} target='_blank'>View</a></button>
+                                </div>
                                 <img src={item.card_img} alt="" />
                             </div>
 
                             <div className="work-content">
 
                                 <div className="work-top">
-                                    <p className="category">{item.category} <span><a href={item.Git_link}><img src={item.git_icon} alt="" /></a></span></p>
+                                    <p className="category">{item.category} <span><a href={item.Link}><img src={item.git_icon} alt="" /></a></span></p>
                                     <h2 className="name">{item.name}</h2>
                                 </div>
                                 <div className="work-bottom">

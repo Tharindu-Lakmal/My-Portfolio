@@ -11,12 +11,15 @@ const AllWork = () => {
 
                     <div className="allWork-base-content">
                         <div className="allWork-card-img">
+                            <div className="view-btn">
+                                <button><a href={item.Link} target='_blank'>View</a></button>
+                            </div>
                             <img src={item.card_img} alt="" />
                         </div>
 
                         <div className="main-heading">
                             <h2>{item.name}</h2>
-                            <p>{item.category}</p>
+                            <p>{item.category}<a href={item.Link}><img src={item.git_icon} alt="" /></a></p>
                         </div>
                     </div>
 
