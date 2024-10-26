@@ -323,12 +323,21 @@
     width: 100%;
     height: 100vh;
     background-color: var(--stroke-color);
+    opacity: 80%;
     z-index: -999;
-    transition: 0.4s ease-in-out;
+    animation: 0.8s ease-in-out overlayView;
 }
 .overlay.hide {
     display: none;
-    transition-delay: 0.4s;
+}
+
+@keyframes overlayView {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 80%;
+    }
 }
 
 

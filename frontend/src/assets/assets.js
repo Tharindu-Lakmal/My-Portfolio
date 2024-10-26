@@ -1,16 +1,12 @@
 import user from './user.png'
-import foodBuddy from './foodBuddy.png'
-import playBoll from './playBoll.png'
-import traveller from './traveller.png'
-import turbofix from './turbofix.png'
-import card1 from './card1.png'
-import card2 from './card2.png'
-import card3 from './card3.png'
+import userbig from './userbig.jpeg'
+
 import card4 from './card4.png'
 import card5 from './card5.png'
 import card6 from './card6.png'
 import card7 from './card7.png'
 import card8 from './card8.png'
+
 import whatsapp from './whatsapp.png'
 import work_img from './work_img.png'
 import hello from './hello.png'
@@ -19,20 +15,14 @@ import right_quotation_ from './right_quotation_.png'
 import right_quotation_white from './right_quotation_white.png'
 import right_quotation_white_ from './right_quotation_white_.png'
 import aim from './aim.png'
-import userbig from './userbig.jpeg'
 import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
-import logo from './logo.svg'
-import github from './github.png'
 
-import FOOD_BUDDY1 from './FOOD_BUDDY1.png'
-import FOOD_BUDDY2 from './FOOD_BUDDY2.png'
-import HotelPartner from './HotelPartner.png'
-import Play_Boll from './Play_Boll.png'
-import The_Traveler from './The_Traveler.png'
-import Turbo_Fix from './Turbo_Fix.png'
-import UNICON from './UNICON.png'
+import artisanLanka from './artisanLanka.png'
+import Earn_Learn from './Earn&Learn.png'
+import JurisConnect from './JurisConnect.png'
+import FoodBuddy from './foodBuddy.png'
 
 import bootstrap from './bootstrap.png'
 import figma from './figma.png'
@@ -49,30 +39,23 @@ import css from './css.png'
 
 export const assets = {
     user,
-    foodBuddy,
-    playBoll,
-    traveller,
-    turbofix,
+    userbig,
     whatsapp,
     work_img,
-    FOOD_BUDDY1,
-    FOOD_BUDDY2,
-    HotelPartner,
-    Play_Boll,
-    The_Traveler,
-    Turbo_Fix,
-    UNICON,
     hello,
     right_quotation,
     right_quotation_,
     right_quotation_white,
     right_quotation_white_,
     aim,
-    userbig,
     design_icon,
     development_icon,
     check,
-    logo
+
+    JurisConnect,
+    Earn_Learn,
+    artisanLanka,
+    FoodBuddy
 }
 
 export const tools = [
@@ -93,111 +76,114 @@ export const tools = [
 
 export const all_work = [
     {
-        card_img: FOOD_BUDDY1,
+        card_img: FoodBuddy,
         category: "Design",
-        name: "FOOD BUDDY",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        name: "FoodBuddy",
+        description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
-        git_icon: github,
-        Link: ""
+        Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
-        card_img: The_Traveler,
+        card_img: JurisConnect,
         category: "Design & Development",
-        name: "The Traveler",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        git_icon: github,
-        Link: ""
+        name: "JurisConnect",
+        description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
+        tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
     },
     {
-        card_img: Play_Boll,
+        card_img: Earn_Learn,
         category: "Design & Development",
-        name: "Play Boll",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        git_icon: github,
-        Link: ""
+        name: "Learn&Earn",
+        description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
+        tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     },
     {
-        card_img: FOOD_BUDDY2,
+        card_img: artisanLanka,
         category: "Design",
-        name: "FOOD BUDDY",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        name: "artisanLanka",
+        description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
-        git_icon: github,
-        Link: ""
-    },
+        Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
+    }
+]
+
+export const design = [
     {
-        card_img: Turbo_Fix,
+        card_img: FoodBuddy,
         category: "Design",
-        name: "Turbo Fix",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
+        name: "FoodBuddy",
+        description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
-        git_icon: github,
-        Link: ""
+        Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
-        card_img: HotelPartner,
+        card_img: artisanLanka,
+        category: "Design",
+        name: "artisanLanka",
+        description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
+        tools: ["Figma", "Photoshop"],
+        Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
+    }
+]
+
+export const development = [
+    {
+        card_img: JurisConnect,
         category: "Design & Development",
-        name: "Hotel Partner",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        git_icon: github,
-        Link: ""
+        name: "JurisConnect",
+        description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
+        tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
     },
     {
-        card_img: UNICON,
+        card_img: Earn_Learn,
         category: "Design & Development",
-        name: "UNICON",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        git_icon: github,
-        Link: ""
+        name: "Learn&Earn",
+        description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
+        tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
+    }
+]
+
+export const top_work = [
+    {
+        card_img: artisanLanka,
+        category: "Design",
+        name: "artisanLanka",
+        description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
+        tools: ["Figma", "Photoshop"],
+        Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
+    },
+    {
+        card_img: JurisConnect,
+        category: "Design & Development",
+        name: "JurisConnect",
+        description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
+        tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
+    },
+    {
+        card_img: FoodBuddy,
+        category: "Design",
+        name: "FoodBuddy",
+        description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
+        tools: ["Figma", "Photoshop"],
+        Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+    },
+    {
+        card_img: Earn_Learn,
+        category: "Design & Development",
+        name: "Learn&Earn",
+        description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
+        tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     }
 ]
 
 
-export const slider = [card1, card2, card3, card4, card5, card6, card7, card8]
-
-export const top_work = [
-    {
-        card_img: foodBuddy,
-        category: "Design",
-        name: "FOOD BUDDY",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop"],
-        git_icon: github,
-        Link: ""
-    },
-    {
-        card_img: playBoll,
-        category: "Design & Development",
-        name: "Play Boll",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB"],
-        git_icon: github,
-        Link: ""
-    },
-    {
-        card_img: traveller,
-        category: "Design & Development",
-        name: "The Traveller",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop", "ReactJS", "NodeJS", "MongoDB", "Bootstrap"],
-        git_icon: github,
-        Link: ""
-    },
-    {
-        card_img: turbofix,
-        category: "Design",
-        name: "TurboFix",
-        description: "Creating a meaningful word that directly follows this order is quite challenging due to the specific letters involved.",
-        tools: ["Figma", "Photoshop"],
-        git_icon: github,
-        Link: ""
-    },
-]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, card4, card5, card6, card7, card8]
 
 
 export const frontend_skills = [

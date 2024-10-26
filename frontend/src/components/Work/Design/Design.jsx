@@ -1,11 +1,11 @@
 import React from 'react'
 import './Design.css'
-import { all_work } from '../../../assets/assets'
+import { design } from '../../../assets/assets'
 
 const Design = () => {
   return (
     <div className='allWork'>
-        {all_work.map((item, index) => {
+        {design.map((item, index) => {
             return (
                 <div className="allWork-card" key={index}>
 
