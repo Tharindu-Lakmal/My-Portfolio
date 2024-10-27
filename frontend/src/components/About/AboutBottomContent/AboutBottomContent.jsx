@@ -28,7 +28,7 @@ const AboutBottomContent = () => {
               <div className="card-bottom-tools">
                 {tools.slice(0, 4).map((item, index) => {
                   return (
-                    <div className="tools" key={index}>
+                    <div className="tools2" key={index}>
                       <img src={item} alt="" />
                     </div>
                   )
@@ -58,7 +58,7 @@ const AboutBottomContent = () => {
               <div className="card-bottom-tools">
                 {tools.slice(4).map((item, index) => {
                   return (
-                    <div className="tools" key={index}>
+                    <div className="tools2" key={index}>
                       <img src={item} alt="" />
                     </div>
                   )
