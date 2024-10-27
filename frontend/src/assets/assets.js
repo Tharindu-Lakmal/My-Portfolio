@@ -1,7 +1,6 @@
 import user from './user.png'
 import userbig from './userbig.jpeg'
 
-import card4 from './card4.png'
 import card5 from './card5.png'
 import card6 from './card6.png'
 import card7 from './card7.png'
@@ -26,18 +25,18 @@ import JurisConnect from './JurisConnect.png'
 import FoodBuddy from './foodBuddy.png'
 import MyPortfolio from './MyPortfolio.png'
 
-import bootstrap from './bootstrap.png'
-import figma from './figma.png'
-import git from './git.png'
-import html5 from './html5.png'
-import JavaScript from './JavaScript.png'
-import mongodb from './mongodb.png'
-import nodejs from './nodejs.png'
-import photoshop from './photoshop.png'
-import ReactJS from './ReactJS.png'
-import tailwind from './tailwind.png'
-import firebase from './firebase.png'
-import css from './css.png'
+import bootstrap from './bootstrap.svg'
+import figma from './figma.svg'
+import git from './git.svg'
+import html5 from './html5.svg'
+import JavaScript from './JavaScript.svg'
+import mongodb from './mongodb.svg'
+import nodejs from './nodejs.svg'
+import photoshop from './photoshop.svg'
+import ReactJS from './ReactJS.svg'
+import tailwind from './tailwind.svg'
+import firebase from './firebase.svg'
+import css from './css.svg'
 
 export const assets = {
     user,
@@ -77,6 +76,8 @@ export const tools = [
     firebase
 ]
 
+export const tools2 = ['Figma', 'Photoshop', 'Bootstrap', 'Tailwind', 'ReactJS', 'JavaScript', 'HTML5', 'CSS', 'NodeJS', 'Git', 'MongoDB', 'Firebase']
+export const develop_icon = ['ReactJS', 'JavaScript', 'HTML5', 'CSS', 'NodeJS', 'Git', 'MongoDB', 'Firebase']
 
 export const all_work = [
     {
@@ -217,7 +218,7 @@ export const top_work = [
 ]
 
 
-export const slider = [artisanLanka, FoodBuddy, JurisConnect, card4, card5, card6, card7, card8]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, card5, card6, card7, card8]
 
 
 export const frontend_skills = [
