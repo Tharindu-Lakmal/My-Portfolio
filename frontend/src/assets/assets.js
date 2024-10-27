@@ -18,11 +18,13 @@ import aim from './aim.png'
 import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
+import github from './github.png'
 
 import artisanLanka from './artisanLanka.png'
 import Earn_Learn from './Earn&Learn.png'
 import JurisConnect from './JurisConnect.png'
 import FoodBuddy from './foodBuddy.png'
+import MyPortfolio from './MyPortfolio.png'
 
 import bootstrap from './bootstrap.png'
 import figma from './figma.png'
@@ -51,11 +53,13 @@ export const assets = {
     design_icon,
     development_icon,
     check,
+    github,
 
     JurisConnect,
     Earn_Learn,
     artisanLanka,
-    FoodBuddy
+    FoodBuddy,
+    MyPortfolio
 }
 
 export const tools = [
@@ -81,6 +85,7 @@ export const all_work = [
         name: "FoodBuddy",
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -89,6 +94,7 @@ export const all_work = [
         name: "JurisConnect",
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: "https://github.com/JayaruPerera/Juris-Connect.git"
     },
     {
@@ -97,6 +103,7 @@ export const all_work = [
         name: "Learn&Earn",
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        git_icon: github,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     },
     {
@@ -105,7 +112,17 @@ export const all_work = [
         name: "artisanLanka",
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
+    },
+    {
+        card_img: MyPortfolio,
+        category: "Design",
+        name: "My Portfolio",
+        description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
+        tools: ["Figma"],
+        git_icon: github,
+        Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
     }
 ]
 
@@ -116,6 +133,7 @@ export const design = [
         name: "FoodBuddy",
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -124,7 +142,17 @@ export const design = [
         name: "artisanLanka",
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
+    },
+    {
+        card_img: MyPortfolio,
+        category: "Design",
+        name: "My Portfolio",
+        description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
+        tools: ["Figma"],
+        git_icon: github,
+        Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
     }
 ]
 
@@ -135,6 +163,7 @@ export const development = [
         name: "JurisConnect",
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: "https://github.com/JayaruPerera/Juris-Connect.git"
     },
     {
@@ -143,6 +172,7 @@ export const development = [
         name: "Learn&Earn",
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        git_icon: github,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     }
 ]
@@ -154,6 +184,7 @@ export const top_work = [
         name: "artisanLanka",
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
     },
     {
@@ -162,6 +193,7 @@ export const top_work = [
         name: "JurisConnect",
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
+        git_icon: github,
         Link: "https://github.com/JayaruPerera/Juris-Connect.git"
     },
     {
@@ -170,6 +202,7 @@ export const top_work = [
         name: "FoodBuddy",
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
+        git_icon: github,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -178,6 +211,7 @@ export const top_work = [
         name: "Learn&Earn",
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
+        git_icon: github,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     }
 ]
