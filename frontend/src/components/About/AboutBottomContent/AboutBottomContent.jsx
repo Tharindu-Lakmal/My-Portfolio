@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutBottomContent.css'
-import { assets, tools } from '../../../assets/assets'
+import { assets, tools2 } from '../../../assets/assets'
 
 const AboutBottomContent = () => {
   return (
@@ -26,10 +26,11 @@ const AboutBottomContent = () => {
               <p className="card-subheader">Tools & Techniques:</p>
 
               <div className="card-bottom-tools">
-                {tools.slice(0, 4).map((item, index) => {
+                {tools2.slice(0, 4).map((item, index) => {
                   return (
                     <div className="about-tools" key={index}>
-                      <img src={item} alt="" />
+                      <img src={item.tools_icon} alt="" />
+                      <p>{item.tools_name}</p>
                     </div>
                   )
                 })}
@@ -56,10 +57,11 @@ const AboutBottomContent = () => {
               <p className="card-subheader">Tools & Techniques:</p>
 
               <div className="card-bottom-tools">
-                {tools.slice(4).map((item, index) => {
+                {tools2.slice(4).map((item, index) => {
                   return (
                     <div className="about-tools" key={index}>
-                      <img src={item} alt="" />
+                      <img src={item.tools_icon} alt="" />
+                      <p>{item.tools_name}</p>
                     </div>
                   )
                 })}

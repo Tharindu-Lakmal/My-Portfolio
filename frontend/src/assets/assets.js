@@ -76,8 +76,56 @@ export const tools = [
     firebase
 ]
 
-export const tools2 = ['Figma', 'Photoshop', 'Bootstrap', 'Tailwind', 'ReactJS', 'JavaScript', 'HTML5', 'CSS', 'NodeJS', 'Git', 'MongoDB', 'Firebase']
-export const develop_icon = ['ReactJS', 'JavaScript', 'HTML5', 'CSS', 'NodeJS', 'Git', 'MongoDB', 'Firebase']
+export const tools2 = [
+    {
+        tools_icon: figma,
+        tools_name: "Figma"
+    },
+    {
+        tools_icon: photoshop,
+        tools_name: "Photoshop"
+    },
+    {
+        tools_icon: bootstrap,
+        tools_name: "Bootstrap"
+    },
+    {
+        tools_icon: tailwind,
+        tools_name: "Tailwind"
+    },
+    {
+        tools_icon: ReactJS,
+        tools_name: "ReactJS"
+    },
+    {
+        tools_icon: JavaScript,
+        tools_name: "JavaScript"
+    },
+    {
+        tools_icon: html5,
+        tools_name: "HTML5"
+    },
+    {
+        tools_icon: css,
+        tools_name: "CSS"
+    },
+    {
+        tools_icon: nodejs,
+        tools_name: "NodeJS"
+    },
+    {
+        tools_icon: git,
+        tools_name: "Git"
+    },
+    {
+        tools_icon: mongodb,
+        tools_name: "MongoDB"
+    },
+    {
+        tools_icon: firebase,
+        tools_name: "Firebase"
+    }
+]
 
 export const all_work = [
     {
