@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './imageSlider.css'
+import './ImageSlider.css'
 import { slider } from '../../../assets/assets'
 
 
