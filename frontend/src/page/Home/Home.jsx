@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import "./Home.css"
 import Hero from '../../components/Home/Hero/Hero'
 import Intro from '../../components/Home/Intro/Intro'
@@ -10,6 +11,11 @@ import PageLoader from '../../components/PageLoader/PageLoader'
 import NavBar from '../../components/NavBar/NavBar'
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className='home'>
         <PageLoader pageName="Home" />

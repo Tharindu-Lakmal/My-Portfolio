@@ -7,6 +7,8 @@ import About from './page/About/About'
 import Contact from './page/Contact/Contact'
 import PageLoader from './components/PageLoader/PageLoader'
 
+import ScrollBack from './components/ScrollBack/ScrollBack'
+
 function App() {
   
 
@@ -14,6 +16,8 @@ function App() {
     <div className='app'>
 
       <PageLoader pageName={'home'} />
+
+      <ScrollBack />
       
       <Routes>
         <Route path='/' element={<Home />} />
