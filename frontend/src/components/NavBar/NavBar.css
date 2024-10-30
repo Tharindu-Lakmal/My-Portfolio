@@ -216,7 +216,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .open-close .open.hide {
@@ -246,6 +246,13 @@
 
 .open:is(:hover, :focus-visible)::before {
     height: 100%;
+}
+
+.menu-bar {
+    position: relative;
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-light);
 }
 
 /* --------------------------- */
