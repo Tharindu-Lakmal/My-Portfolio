@@ -130,7 +130,11 @@ const NavBar = ({page}) => {
 
             <div className="open-close">
                 <div onClick={() => setNavActive(true)} className={navActive ? "open hide":"open"} ref={magnetoRefMini}>
-                    <p className='open-text' ref={magnetoTextRefMini}>Menu</p>
+                    {/* <p className='open-text' ref={magnetoTextRefMini}>Menu</p> */}
+                    <div className="open-text" ref={magnetoTextRefMini}>
+                        <div className="text-bar"></div>
+                        <div className="text-bar"></div>
+                    </div>
                 </div>
                 <div onClick={() => setNavActive(false)} className={navActive ? "scroll-btn active":"scroll-btn scroll-btn-disable"}>
                     <div className="scroll-bar bar1"></div>

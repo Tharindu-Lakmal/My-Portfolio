@@ -65,6 +65,10 @@
     overflow-y: scroll;
 }
 
+.nav-links::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes navOpen {
     0% {
         right: -550px;
@@ -216,7 +220,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+}
+
+.open-text .text-bar {
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-light);
 }
 
 .open-close .open.hide {
