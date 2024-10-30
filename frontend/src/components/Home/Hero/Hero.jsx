@@ -52,8 +52,12 @@ const Hero = () => {
     <div className='hero'>
 
         <div className="text">
-            <h1 className="first-header">UI/UX <span>Designer</span></h1>
+          <div className="text1">
+            <h1 className="first-header">UI/UX Designer</h1>
+          </div>
+          <div className="text2">
             <h1 className="second-header">Full Stack Developer</h1>
+          </div>
         </div>
 
         <div className="user-container">
