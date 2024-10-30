@@ -29,7 +29,7 @@
     margin: 0 10px;
     top: 35vh;
     font-size: 7vw;
-
+    font-weight: 400;
     transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
 }
 .first-header {
@@ -37,9 +37,11 @@
     flex-direction: row;
     gap: 16px;
     font-size: 7vw;
-    color: transparent;
+    font-weight: 500;
+    color: var(--text-light);
+    /* color: transparent;
     -webkit-text-stroke-color: var(--text-light);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
     z-index: 10;
 }
 .first-header span {
@@ -68,7 +70,7 @@
 
 .scroller {
     position: absolute;
-    top: 42vh;
+    bottom: 24vh;
     z-index: 3;
     max-width: 100%;
 }
@@ -79,7 +81,7 @@
     flex-wrap: wrap;
     gap: 0.7rem;
     font-size: 38vw;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-light);
     letter-spacing: 1px;
 }
@@ -116,7 +118,15 @@
     }
 
     .hero .text {
-        top: 40vh;
+        top: 43vh;
+    }
+
+    .first-header, .second-header {
+        font-size: 5vw;
+    }
+
+    .first-header span {
+        font-size: 5vw;
     }
 
     .scroller .scroller_inner {
@@ -133,6 +143,16 @@
         margin-block-start: 40px;
     }
 
+    .hero .text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 100%;
+        top: 5vh;
+    }
+
     .scroller .scroller_inner {
         gap: 1rem;
         letter-spacing: 2px;
@@ -141,14 +161,21 @@
 
     .first-header, .second-header {
         top: 35vh;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .first-header {
         gap: 16px;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .first-header span {
-        font-size: 5vw;
+        font-size: 4vw;
+    }
+
+    .scroller {
+        position: absolute;
+        bottom: -3vh;
+        z-index: 3;
+        max-width: 100%;
     }
 }
 
@@ -160,7 +187,7 @@
         margin-block-start: -35px;
     }
 
-    .hero .text {
+    /* .hero .text {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -169,8 +196,8 @@
         min-height: 100vh;
         top: 0;
         padding-inline-start: 0;
-    }
-    .first-header, .second-header {
+    } */
+    /* .first-header, .second-header {
         position: relative;
         font-size: 9vw;
         top: 25vh;
@@ -189,7 +216,7 @@
         color: var(--text-light);
         margin-block-start: 0px;
         -webkit-text-stroke-width: 0px;
-    }
+    } */
     
     .second-header {
         position: relative;
@@ -199,8 +226,7 @@
 
     .scroller {
         position: absolute;
-        top: 0;
-        top: 90vh;
+        bottom: -1vh;
         z-index: 3;
         max-width: 100%;
     }
@@ -208,8 +234,8 @@
     .scroller .scroller_inner {
         gap: 1rem;
         letter-spacing: 2px;
-        font-weight: 600;
-        font-size: 3.5vw;
+        font-weight: 400;
+        font-size: 16vw;
     }
     
 }
@@ -221,9 +247,9 @@
 
     .scroller .scroller_inner {
         gap: 2rem;
-        font-size: 3.5vw;
+        font-size: 16vw;
         letter-spacing: 2px;
-        font-weight: 600;
+        font-weight: 400;
     }
 }
 
