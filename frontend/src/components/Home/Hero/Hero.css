@@ -70,7 +70,7 @@
 
 .scroller {
     position: absolute;
-    bottom: 24vh;
+    top: 35vh;
     z-index: 3;
     max-width: 100%;
 }
@@ -80,8 +80,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.7rem;
-    font-size: 38vw;
-    font-weight: 400;
+    font-size: 36vw;
+    font-weight: 500;
     color: var(--text-light);
     letter-spacing: 1px;
 }
