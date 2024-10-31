@@ -18,6 +18,7 @@ import design_icon from './design_icon.png'
 import development_icon from './development_icon.png'
 import check from './check.png'
 import github from './github.png'
+import arrowRightDown from './arrow-right-down.svg'
 
 import artisanLanka from './artisanLanka.png'
 import Earn_Learn from './Earn&Learn.png'
@@ -53,6 +54,7 @@ export const assets = {
     development_icon,
     check,
     github,
+    arrowRightDown,
 
     JurisConnect,
     Earn_Learn,

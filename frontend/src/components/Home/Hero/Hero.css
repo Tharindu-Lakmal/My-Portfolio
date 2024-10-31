@@ -2,6 +2,7 @@
     border: none;
     width: 16px;
     margin-block-start: 40px;
+    visibility: hidden;
 }
 
 .hero {
@@ -9,51 +10,72 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--bg-hero);
     overflow: hidden;
 }
 
 .hero .text {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    width: 100%;
-    top: 45vh;
-    padding-inline-start: 4%;
-}
-.first-header, .second-header {
     position: relative;
-    margin: 0 10px;
-    top: 35vh;
-    font-size: 7vw;
-    font-weight: 400;
-    transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
-}
-.first-header {
     display: flex;
-    flex-direction: row;
-    gap: 16px;
-    font-size: 7vw;
-    font-weight: 500;
-    color: var(--text-light);
-    /* color: transparent;
-    -webkit-text-stroke-color: var(--text-light);
-    -webkit-text-stroke-width: 1px; */
-    z-index: 10;
-}
-.first-header span {
-    font-size: 7vw;
-    color: var(--text-light);
-    -webkit-text-stroke-width: 0px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    top: 80vh;
+    z-index: 100;
 }
 
-.second-header {
+.text-inner-right,
+.text-inner-left {
     position: relative;
+}
+
+.text-inner-left {
+    width: 20%;
+    height: 60px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: var(--text-dark);
+    border-radius: 30px 0 0 30px;
+}
+.text-inner-left p {
+    display: none;
+}
+.text-inner-left iframe {
+    width: 40px;
+    height: 40px;
+    visibility: visible;
+    margin: 0;
+}
+
+.text-inner-right {
+    position: relative;
+    padding-inline-start: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.text-inner-right .text1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.text-inner-right img {
+    width: 24px;
+}
+
+
+.first-header, .second-header {
+    font-size: 7vw;
+    font-weight: 400;
+    letter-spacing: 0.6px;
     color: var(--text-light);
-    z-index: 10;
 }
 
 .hero .user-container {
@@ -64,15 +86,16 @@
 
 .hero .user-container img {
     width: auto;
-    height: 95vh;
+    height: 100vh;
     bottom: 0;
 }
 
 .scroller {
     position: absolute;
-    top: 35vh;
+    top: 52vh;
     z-index: 3;
     max-width: 100%;
+    transition: 1s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 .scroller .scroller_inner {
@@ -81,7 +104,7 @@
     flex-wrap: wrap;
     gap: 0.7rem;
     font-size: 36vw;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-light);
     letter-spacing: 1px;
 }
@@ -113,26 +136,28 @@
 
 @media only screen and (min-width:540px) {
     
-    .hero iframe {
-        margin-block-start: 30px;
+    .text-inner-left {
+        width: 20%;
+        height: 60px;
+        border-radius: 50px 0 0 50px;
     }
-
-    .hero .text {
-        top: 43vh;
+    .text-inner-left iframe {
+        width: 40px;
+        height: 40px;
     }
 
     .first-header, .second-header {
         font-size: 5vw;
     }
 
-    .first-header span {
-        font-size: 5vw;
+    .scroller {
+        top: 50vh;
     }
 
     .scroller .scroller_inner {
         gap: 1rem;
         letter-spacing: 2px;
-        font-size: 20vw;
+        font-size: 23vw;
     }
 }
 
@@ -144,38 +169,49 @@
     }
 
     .hero .text {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 0.5rem;
+        position: relative;
         width: 100%;
-        top: 5vh;
+        margin: 0 auto;
+        top: 40vh;
     }
 
-    .scroller .scroller_inner {
-        gap: 1rem;
-        letter-spacing: 2px;
-        font-size: 15vw;
+    .text-inner-left {
+        width: 34%;
+        max-width: 340px;
+        height: 120px;
+        order: 0;
+        border-radius: 0 80px 80px 0;
+        flex-direction: row;
+        gap: 34px;
+        padding: 0 32px;
+    }
+    .text-inner-left p {
+        display: block;
+        color: var(--text-light);
+    }
+    .text-inner-left iframe {
+        width: 40px;
+        height: 40px;
+        visibility: visible;
+        margin: 0;
+    }
+
+    .text-inner-right {
+        padding-inline-end: 3%;
     }
 
     .first-header, .second-header {
-        top: 35vh;
-        font-size: 4vw;
-    }
-    .first-header {
-        gap: 16px;
-        font-size: 4vw;
-    }
-    .first-header span {
         font-size: 4vw;
     }
 
     .scroller {
-        position: absolute;
-        bottom: -3vh;
-        z-index: 3;
-        max-width: 100%;
+        top: 64vh;
+    }
+
+    .scroller .scroller_inner {
+        gap: 1rem;
+        font-size: 28vw;
+        letter-spacing: 2px;
     }
 }
 
@@ -186,58 +222,40 @@
         width: 12px;
         margin-block-start: -35px;
     }
-
-    /* .hero .text {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        min-height: 100vh;
-        top: 0;
-        padding-inline-start: 0;
-    } */
-    /* .first-header, .second-header {
-        position: relative;
-        font-size: 9vw;
-        top: 25vh;
-    }
-    .first-header {
-        flex-direction: row;
-        gap: 1.8rem;
-        font-size: 9vw;
-        color: transparent;
-        -webkit-text-stroke-color: var(--text-light);
-        -webkit-text-stroke-width: 1px;
-        z-index: 1;
-    }
-    .first-header span {
-        font-size: 9vw;
-        color: var(--text-light);
-        margin-block-start: 0px;
-        -webkit-text-stroke-width: 0px;
-    } */
     
-    .second-header {
-        position: relative;
-        color: var(--text-light);
-        z-index: 100;
+    .hero .text {
+        top: 32vh;
+    }
+
+    .text-inner-left {
+        max-width: 360px;
+    }
+    .text-inner-left p {
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+    .text-inner-left iframe {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .text-inner-right {
+        padding-inline-end: 4%;
+    }
+
+    .first-header, .second-header {
+        font-size: 3vw;
     }
 
     .scroller {
         position: absolute;
-        bottom: -1vh;
-        z-index: 3;
-        max-width: 100%;
+        top: 62vh;
     }
 
     .scroller .scroller_inner {
-        gap: 1rem;
-        letter-spacing: 2px;
-        font-weight: 400;
-        font-size: 16vw;
+        font-size: 24vw;
     }
-    
 }
 
 @media only screen and (min-width:1200px) {
@@ -245,17 +263,25 @@
         gap: 0.3rem;
     }
 
+    .text-inner-right {
+        padding-inline-end: 8%;
+    }
+
+    .first-header, .second-header {
+        font-size: 2vw;
+    }
+
+    .scroller {
+        top: 62vh;
+    }
+
     .scroller .scroller_inner {
-        gap: 2rem;
-        font-size: 16vw;
-        letter-spacing: 2px;
-        font-weight: 400;
+        font-size: 15vw;
     }
 }
 
 @media only screen and (min-width:1400px) {
     
     .first-header, .second-header {
-        top: 20vh;
     }
 }
