@@ -288,7 +288,7 @@ export const top_work = [
 ]
 
 
-export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, card5, card6, card7, card8]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, card6, card7, card8]
 
 
 export const frontend_skills = [
