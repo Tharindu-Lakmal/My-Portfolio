@@ -200,6 +200,10 @@
         padding-inline-end: 3%;
     }
 
+    .text-inner-right img {
+        width: 32px;
+    }
+
     .first-header, .second-header {
         font-size: 4vw;
     }
@@ -282,6 +286,6 @@
 
 @media only screen and (min-width:1400px) {
     
-    .first-header, .second-header {
-    }
+    /* .first-header, .second-header {
+    } */
 }
