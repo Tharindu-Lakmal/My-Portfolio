@@ -25,6 +25,7 @@ import Earn_Learn from './Earn&Learn.png'
 import JurisConnect from './JurisConnect.png'
 import FoodBuddy from './foodBuddy.png'
 import MyPortfolio from './MyPortfolio.png'
+import SUSLWebPeoject from './SUSLWebPeoject.png'
 
 import bootstrap from './bootstrap.svg'
 import figma from './figma.svg'
@@ -60,7 +61,8 @@ export const assets = {
     Earn_Learn,
     artisanLanka,
     FoodBuddy,
-    MyPortfolio
+    MyPortfolio,
+    SUSLWebPeoject
 }
 
 export const tools = [
@@ -174,6 +176,15 @@ export const all_work = [
         tools: ["Figma"],
         git_icon: github,
         Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
+    },
+    {
+        card_img: SUSLWebPeoject,
+        category: "Design & Development",
+        name: "SUJCS Web Peoject",
+        description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
+        tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
+        git_icon: github,
+        Link: "https://github.com/Tharindu-Lakmal/SUJCS_Web_Project.git"
     }
 ]
 
@@ -225,6 +236,15 @@ export const development = [
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
+    },
+    {
+        card_img: SUSLWebPeoject,
+        category: "Design & Development",
+        name: "SUJCS Web Peoject",
+        description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
+        tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
+        git_icon: github,
+        Link: "https://github.com/Tharindu-Lakmal/SUJCS_Web_Project.git"
     }
 ]
 
