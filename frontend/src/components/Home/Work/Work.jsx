@@ -1,10 +1,13 @@
 import React from 'react'
 import './Work.css'
-import { top_work } from '../../../assets/assets'
+import { all_work, top_work } from '../../../assets/assets'
 import { Link } from 'react-router-dom'
 
 
 const Work = () => {
+
+    let len = all_work.length;
+
   return (
     <div className='works'>
         <div className="work-container">
@@ -26,7 +29,7 @@ const Work = () => {
                             <div className="work-content">
 
                                 <div className="work-top">
-                                    <p className="category">{item.category} <span><a href={item.Link}><img src={item.git_icon} alt="" /></a></span></p>
+                                    <p className="category">{item.category} <span><a href={item.Link} target='_blank'><img src={item.git_icon} alt="" /></a></span></p>
                                     <h2 className="name">{item.name}</h2>
                                 </div>
                                 <div className="work-bottom">
@@ -50,6 +53,7 @@ const Work = () => {
             
             <button className="btn-work btn-dark">
                 <Link to = '/work'>More work</Link>
+                <p>{len}</p>
             </button>
             
         </div>
