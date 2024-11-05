@@ -19,7 +19,7 @@ const Development = () => {
 
                         <div className="main-heading">
                             <h2>{item.name}</h2>
-                            <p>{item.category}<a href={item.Link}><img src={item.git_icon} alt="" /></a></p>
+                            <p>{item.category}<a href={item.Link} target='_blank'><img src={item.git_icon} alt="" /></a></p>
                         </div>
                     </div>
 

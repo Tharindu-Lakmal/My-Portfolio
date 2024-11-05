@@ -1,8 +1,6 @@
 import user from './user.png'
 import userbig from './userbig.jpeg'
 
-import card5 from './card5.png'
-import card6 from './card6.png'
 import card7 from './card7.png'
 import card8 from './card8.png'
 
@@ -26,6 +24,7 @@ import JurisConnect from './JurisConnect.png'
 import FoodBuddy from './foodBuddy.png'
 import MyPortfolio from './MyPortfolio.png'
 import SUSLWebPeoject from './SUSLWebPeoject.png'
+import FoodTop from './FoodTop.png'
 
 import bootstrap from './bootstrap.svg'
 import figma from './figma.svg'
@@ -288,7 +287,7 @@ export const top_work = [
 ]
 
 
-export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, card6, card7, card8]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, FoodTop, card7, card8]
 
 
 export const frontend_skills = [
@@ -318,8 +317,12 @@ export const frontend_skills = [
     },
     {
         number: "07",
-        type: "Figma"
+        type: "GSAP"
     },
+    {
+        number: "08",
+        type: "Figma"
+    }
 ]
 
 export const backend_skills = [
@@ -337,10 +340,14 @@ export const backend_skills = [
     },
     {
         number: "04",
-        type: "Firebase"
+        type: "MySQL"
     },
     {
         number: "05",
-        type: "Git"
+        type: "Firebase"
     },
+    {
+        number: "06",
+        type: "Git"
+    }
 ]

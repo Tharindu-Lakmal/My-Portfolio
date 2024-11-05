@@ -28,7 +28,7 @@ const Footer = () => {
                   <a href="mailto:tharindulakmal.k8@gmail.com">tharindulakmal.k8@gmail.com</a>
                 </button>
                 <button className="phone linkBtn">
-                  <a href='https://m.me/tharindulakmal99' target='_blank'>
+                  <a href='https://wa.me/+94758061381?text=Hello, how can I help you?' target='_blank'>
                     Find me
                     <img src={assets.whatsapp} alt="" />
                   </a>
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="social-links">
               <div className="social-links-inner">
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
-                <a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank' className="social-link">LinkdIn</a>
+                <a href='https://www.linkedin.com/in/tharindulakmal99' target='_blank' className="social-link">LinkdIn</a>
                 <a href='https://github.com/Tharindu-Lakmal' target='_blank' className="social-link">GitHub</a>
               </div>
             </div>

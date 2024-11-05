@@ -19,12 +19,12 @@ const AllWork = () => {
 
                         <div className="main-heading">
                             <h2>{item.name}</h2>
-                            <p>{item.category}<a href={item.Link}><img src={item.git_icon} alt="" /></a></p>
+                            <p>{item.category}<a href={item.Link} target='_blank'><img src={item.git_icon} alt="" /></a></p>
                         </div>
                     </div>
 
                     <div className="allWork-sub-content">
-                        <p className="description">{item.description}</p>
+                        <p className="description"><span>{item.type}</span>{item.description}</p>
                                     
                         <p className="tools">
                             {item.tools && item.tools.map((tool, toolIndex) => (
