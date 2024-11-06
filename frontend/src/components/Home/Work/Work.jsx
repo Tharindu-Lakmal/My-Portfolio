@@ -20,6 +20,7 @@ const Work = () => {
                         <div className="work" key={index}>
 
                             <div className="work-img">
+                                <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div>
                                 <div className="view-btn">
                                     <button><a href={item.Link} target='_blank'>View</a></button>
                                 </div>

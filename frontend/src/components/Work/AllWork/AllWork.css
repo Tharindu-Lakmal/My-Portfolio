@@ -79,6 +79,27 @@
     gap: 12px;
 }
 
+.allWork-base-content .type {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    color: var(--text-light);
+}
+
+.allWork-base-content .type p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.allWork-base-content .type img {
+    width: 16px;
+}
+
 .allWork-card .main-heading {
     display: flex;
     flex-direction: column;

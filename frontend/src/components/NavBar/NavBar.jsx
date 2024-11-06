@@ -91,6 +91,7 @@ const NavBar = ({page}) => {
         <div className="navBar-container">
 
             <div className="logo">
+                <div className="online"></div>
                 <Link to = '/'>
                     <p className={page == 'pure'? "":"dark"}>
                         Tharindu—Lakmal.

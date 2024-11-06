@@ -11,6 +11,7 @@ const AllWork = () => {
 
                     <div className="allWork-base-content">
                         <div className="allWork-card-img">
+                            <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div>
                             <div className="view-btn">
                                 <button><a href={item.Link} target='_blank'>View</a></button>
                             </div>
@@ -24,7 +25,7 @@ const AllWork = () => {
                     </div>
 
                     <div className="allWork-sub-content">
-                        <p className="description"><span>{item.type}</span>{item.description}</p>
+                        <p className="description">{item.description}</p>
                                     
                         <p className="tools">
                             {item.tools && item.tools.map((tool, toolIndex) => (

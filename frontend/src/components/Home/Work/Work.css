@@ -38,6 +38,27 @@
     max-width: 780px;
 }
 
+.type {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    color: var(--text-light);
+}
+
+.type p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.work-img .type img {
+    width: 16px;
+}
+
 .work-img .view-btn {
     position: absolute;
     display: flex;
