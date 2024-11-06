@@ -1,8 +1,8 @@
 import user from './user.png'
 import userbig from './userbig.jpeg'
 
-import card7 from './card7.png'
-import card8 from './card8.png'
+import cv from './cv.pdf'
+import cvarrow from './cvarrow.png'
 
 import whatsapp from './whatsapp.png'
 import work_img from './work_img.png'
@@ -17,6 +17,7 @@ import development_icon from './development_icon.png'
 import check from './check.png'
 import github from './github.png'
 import arrowRightDown from './arrow-right-down.svg'
+import group from './group.png'
 
 import artisanLanka from './artisanLanka.png'
 import Earn_Learn from './Earn&Learn.png'
@@ -40,6 +41,9 @@ import firebase from './firebase.svg'
 import css from './css.svg'
 
 export const assets = {
+    cv,
+    cvarrow,
+    group,
     user,
     userbig,
     whatsapp,
@@ -144,15 +148,28 @@ export const all_work = [
         card_img: JurisConnect,
         category: "Design & Development",
         name: "JurisConnect",
+        type: "Group",
+        icon: group,
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
-        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
+        Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
+    },
+    {
+        card_img: MyPortfolio,
+        category: "Design & Development",
+        name: "My Portfolio",
+        description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
+        tools: ["Figma", "ReactJS", "CSS", "GSAP", "EmailJS"],
+        git_icon: github,
+        Link: "https://github.com/Tharindu-Lakmal/My-Portfolio.git"
     },
     {
         card_img: Earn_Learn,
         category: "Design & Development",
         name: "Learn&Earn",
+        type: "Group",
+        icon: group,
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
@@ -180,6 +197,8 @@ export const all_work = [
         card_img: SUSLWebPeoject,
         category: "Design & Development",
         name: "SUJCS Web Peoject",
+        type: "Group",
+        icon: group,
         description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
         tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
         git_icon: github,
@@ -222,15 +241,28 @@ export const development = [
         card_img: JurisConnect,
         category: "Design & Development",
         name: "JurisConnect",
+        type: "Group",
+        icon: group,
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
-        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
+        Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
+    },
+    {
+        card_img: MyPortfolio,
+        category: "Design & Development",
+        name: "My Portfolio",
+        description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
+        tools: ["Figma", "ReactJS", "CSS", "GSAP", "EmailJS"],
+        git_icon: github,
+        Link: "https://github.com/Tharindu-Lakmal/My-Portfolio.git"
     },
     {
         card_img: Earn_Learn,
         category: "Design & Development",
         name: "Learn&Earn",
+        type: "Group",
+        icon: group,
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
@@ -240,6 +272,8 @@ export const development = [
         card_img: SUSLWebPeoject,
         category: "Design & Development",
         name: "SUJCS Web Peoject",
+        type: "Group",
+        icon: group,
         description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
         tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
         git_icon: github,
@@ -261,10 +295,12 @@ export const top_work = [
         card_img: JurisConnect,
         category: "Design & Development",
         name: "JurisConnect",
+        type: "Group",
+        icon: group,
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
-        Link: "https://github.com/JayaruPerera/Juris-Connect.git"
+        Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
     },
     {
         card_img: FoodBuddy,
@@ -279,6 +315,8 @@ export const top_work = [
         card_img: Earn_Learn,
         category: "Design & Development",
         name: "Learn&Earn",
+        type: "Group",
+        icon: group,
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
@@ -287,7 +325,7 @@ export const top_work = [
 ]
 
 
-export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, FoodTop, card7, card8]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, JurisConnect, FoodTop, FoodBuddy]
 
 
 export const frontend_skills = [

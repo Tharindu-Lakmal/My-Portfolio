@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './Intro.css'
 import CircleBtn from '../../btn/CircleBtn';
+import { assets } from '../../../assets/assets';
 
 const Intro = () => {
 
@@ -103,6 +104,12 @@ const Intro = () => {
                         friendly designs with modern technologies 
                         like React, Node.js, and Figma.
                     </p>
+
+                    <a className="cv" href={assets.cv} target='_blank'>
+                        Download CV
+                        <img src={assets.cvarrow} alt="" />
+                    </a>
+
                 </div>
                 <div className="right-side">
                     <p className="header-text">

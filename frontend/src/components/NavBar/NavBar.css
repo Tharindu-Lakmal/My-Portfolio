@@ -25,6 +25,15 @@
     transition: 1.4s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
+.navBar-container .logo .online {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lawngreen;
+    top: -4px;
+}
+
 .navBar-container .logo p {
     width: 60vw;
     color: var(--text-light);
@@ -34,6 +43,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    padding-inline-start: 8px;
 }
 
 .navBar-container .logo .dark {
