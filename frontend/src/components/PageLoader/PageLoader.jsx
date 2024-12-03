@@ -30,7 +30,7 @@ const PageLoader = ({ pageName }) => {
         
         else {
             // If first time loading the website or user is on the home page, display languages
-            if (!hasLoadedBefore && pageName == 'home') {
+            if (!hasLoadedBefore && pageName == 'Home') {
                 sessionStorage.setItem('hasLoadedBefore', 'true'); // Mark first-time load in sessionStorage
             }
 

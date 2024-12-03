@@ -25,7 +25,8 @@ import JurisConnect from './JurisConnect.png'
 import FoodBuddy from './foodBuddy.png'
 import MyPortfolio from './MyPortfolio.png'
 import SUSLWebPeoject from './SUSLWebPeoject.png'
-import FoodTop from './FoodTop.png'
+import Desha from './Desha.png'
+import foodBuddy2 from './foodBuddy2.png'
 
 import bootstrap from './bootstrap.svg'
 import figma from './figma.svg'
@@ -325,7 +326,7 @@ export const top_work = [
 ]
 
 
-export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, SUSLWebPeoject, JurisConnect, FoodTop, FoodBuddy]
+export const slider = [artisanLanka, FoodBuddy, JurisConnect, MyPortfolio, Earn_Learn, SUSLWebPeoject, Desha, foodBuddy2]
 
 
 export const frontend_skills = [

@@ -1,0 +1,15 @@
+.Workmagneto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.Workmagneto-text {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    z-index: 10;
+}

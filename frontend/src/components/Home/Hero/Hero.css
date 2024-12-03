@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
     height: 110vh;
+    min-height: 480px;
     background-color: var(--bg-hero);
     overflow: hidden;
 }
@@ -272,7 +273,7 @@
     }
 
     .first-header, .second-header {
-        font-size: 2vw;
+        font-size: 2.7vw;
     }
 
     .scroller {

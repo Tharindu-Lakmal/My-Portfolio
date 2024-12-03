@@ -1,7 +1,7 @@
 import React from 'react'
 import './Work.css'
-import { all_work, top_work } from '../../../assets/assets'
-import { Link } from 'react-router-dom'
+import { all_work, assets, top_work } from '../../../assets/assets'
+import CommonBtn from '../../btn/CommonBtn'
 
 
 const Work = () => {
@@ -51,12 +51,8 @@ const Work = () => {
                 })}
             </div>
 
-            
-            <button className="btn-work btn-dark">
-                <Link to = '/work'>More work</Link>
-                <p>{len}</p>
-            </button>
-            
+            <CommonBtn title='More work' path='/work' len={len} width='fit' />
+
         </div>
     </div>
   )
