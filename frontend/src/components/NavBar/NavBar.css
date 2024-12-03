@@ -285,14 +285,14 @@
 
 .scroll-btn .scroll-bar {
     position: relative;
-    width: 55%;
+    width: 35%;
     height: 1.3px;
     background-color: var(--text-light);
+    transition: 0.3s ease-in-out;
 }
 
 .scroll-btn:is(:hover, :focus-visible) .scroll-bar {
-    width: 40%;
-    transition: 0.3s ease-in-out;
+    width: 30%;
 }
 
 .scroll-btn .bar1 {
@@ -342,7 +342,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: var(--stroke-color);
+    background-color: var(--text-dark-extra-light);
     opacity: 80%;
     z-index: -999;
     animation: 0.8s ease-in-out overlayView;

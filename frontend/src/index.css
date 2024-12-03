@@ -37,6 +37,10 @@
   font-family: "Inter Tight", sans-serif;
 }
   
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -121,7 +125,7 @@ button, a {
   background-color: transparent;
   position: relative;
   overflow: hidden;
-  transition: 0.4s ease-in-out;
+  /* transition: 0.4s ease-in-out; */
 }
 
 .btn-empty:is(:hover, :focus-visible) {
@@ -135,6 +139,9 @@ button, a {
   border-radius: 100px;
   font-size: 14px;
   background-color: var(--button-active);
+}
+.btn-active span {
+  color: var(--text-light);
 }
 
 .btn-empty::before {
@@ -155,4 +162,7 @@ button, a {
 
 .btn-empty:is(:hover, :focus-visible)::before {
   height: 130%;
+}
+.btn-empty:is(:hover, :focus-visible) span {
+  color: var(--text-light);
 }

@@ -3,9 +3,6 @@ import './ImageSlider.css'
 import { slider } from '../../../assets/assets'
 
 
-
-
-
 const ImageSlider = () => {
 
     useEffect(() => {

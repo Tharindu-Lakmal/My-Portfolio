@@ -4,10 +4,11 @@ import { assets } from '../../../assets/assets'
 import AllWork from '../AllWork/AllWork';
 import Design from '../Design/Design';
 import Development from '../Development/Development';
+import CommonWorkBtn from '../../btn/CommonWorkBtn';
 
 const WorkHeader = () => {
 
-    const [currentType, setCurrentType] = useState("all-work");
+    const [currentType, setCurrentType] = useState("All");
 
     const contentMap = {
         "all-work": <AllWork />,
@@ -15,7 +16,7 @@ const WorkHeader = () => {
         "development": <Development />
     };
 
-    console.log(currentType);
+    // console.log(currentType);
 
 
   return (
@@ -34,34 +35,21 @@ const WorkHeader = () => {
                 </div>
 
                 <div className="workHeader-btn">
-                    <button onClick={() => setCurrentType("all-work")} className={currentType === "all-work"?"btn-active":"btn-empty"}>All</button>
-                    <button onClick={() => setCurrentType("design")} className={currentType === "design"?"btn-active":"btn-empty"}>Design</button>
-                    <button onClick={() => setCurrentType("development")} className={currentType === "development"?"btn-active":"btn-empty"}>Development</button>
+                    <CommonWorkBtn type={'All'} handleClick={() => setCurrentType("All")} currentType={currentType} />
+                    <CommonWorkBtn type={'Design'} handleClick={() => setCurrentType("Design")} currentType={currentType} />
+                    <CommonWorkBtn type={'Development'} handleClick={() => setCurrentType("Development")} currentType={currentType} />
                 </div>
             </div>
 
-            {/* <div className={currentType === "all-work"?"all-work":"remove"}>
-                <AllWork />
-            </div>
-            <div className={currentType === "design"?"design":"remove"}>
-                <Design />
-            </div>
-            <div className={currentType === "development"?"development":"remove"}>
-                <Development />
-            </div> */}
 
-            {/* <div className="work-content-display">
-                {contentMap[currentType] || null}
-            </div> */}
-
-            <div className={`content-section ${currentType === 'all-work' ? 'active' : ''}`}>
-                {currentType === "all-work" && <AllWork />}
+            <div className={`content-section ${currentType === 'All' ? 'active' : ''}`}>
+                {currentType === "All" && <AllWork />}
             </div>
-            <div className={`content-section ${currentType === 'design' ? 'active' : ''}`}>
-                {currentType === "design" && <Design />}
+            <div className={`content-section ${currentType === 'Design' ? 'active' : ''}`}>
+                {currentType === "Design" && <Design />}
             </div>
-            <div className={`content-section ${currentType === 'development' ? 'active' : ''}`}>
-                {currentType === "development" && <Development />}
+            <div className={`content-section ${currentType === 'Development' ? 'active' : ''}`}>
+                {currentType === "Development" && <Development />}
             </div>
 
         </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
-import { Link } from 'react-router-dom'
+import CommonBtn from '../btn/CommonBtn'
+import NavLinkBtn from '../btn/NavLinkBtn'
+import CircleBtn from '../btn/CircleBtn'
 
 const Footer = () => {
   
@@ -19,20 +21,13 @@ const Footer = () => {
 
             <div className="footer-contact">
               
-              <button className="footer-btn">
-                <Link to = '/contact'>Contact me</Link>
-              </button>
+              <div className="footer-btn">
+                <CircleBtn type='Contact me' link='/contact' />
+              </div>
 
               <div className="contact-link">
-                <button  className="email linkBtn">
-                  <a href="mailto:tharindulakmal.k8@gmail.com">tharindulakmal.k8@gmail.com</a>
-                </button>
-                <button className="phone linkBtn">
-                  <a href='https://wa.me/+94758061381?text=Hello, how can I help you?' target='_blank'>
-                    Find me
-                    <img src={assets.whatsapp} alt="" />
-                  </a>
-                </button>
+                <CommonBtn title='tharindulakmal.k8@gmail.com' path='mailto:tharindulakmal.k8@gmail.com' />
+                <CommonBtn title='Find me' path='https://wa.me/+94758061381?text=Hello, how can I help you?' target='_blank' icon={assets.whatsapp} />     
               </div>
 
             </div>
@@ -40,8 +35,10 @@ const Footer = () => {
             <div className="social-links">
               <div className="social-links-inner">
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
-                <a href='https://www.linkedin.com/in/tharindulakmal99' target='_blank' className="social-link">LinkdIn</a>
-                <a href='https://github.com/Tharindu-Lakmal' target='_blank' className="social-link">GitHub</a>
+
+                <NavLinkBtn type='LinkdIn' link='https://www.linkedin.com/in/tharindulakmal99' />
+                <NavLinkBtn type='GitHub' link='https://github.com/Tharindu-Lakmal' />
+
               </div>
             </div>
 

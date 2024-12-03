@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contacts.css'
 import { assets } from '../../assets/assets'
+import NavLinkBtn from '../btn/NavLinkBtn';
 
 const Contacts = () => {
 
@@ -174,11 +175,12 @@ const Contacts = () => {
             </div>
 
             <div className="contact-footer">
-              <a href='mailto:tharindulakmal.k8@gmail.com'>tharindulakmal.k8@gmail.com</a>
+              <NavLinkBtn type='tharindulakmal.k8@gmail.com' link='mailto:tharindulakmal.k8@gmail.com' />
+
               <div className="social">
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
-                <a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank' className="social-link">LinkdIn</a>
-                <a href='https://github.com/Tharindu-Lakmal' target='_blank' className="social-link">Github</a>
+                <NavLinkBtn type='LinkdIn' link='https://www.linkedin.com/in/tharindulakmal99' />
+                <NavLinkBtn type='GitHub' link='https://github.com/Tharindu-Lakmal' />
               </div>
             </div>
 

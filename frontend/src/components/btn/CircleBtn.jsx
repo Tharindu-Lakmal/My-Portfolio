@@ -1,9 +1,31 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './CircleBtn.css'
 import { Link } from 'react-router-dom';
 
-const CircleBtn = () => {
+const CircleBtn = ({type, link}) => {
+
+    const [size, setSize] = useState({ width: '10rem', height: '10rem' });
+
+    //Set screen sizes
+    useEffect(() => {
+        const updateSize = () => {
+          if (window.innerWidth >= 1200) {
+            setSize(type === 'Contact me' ? { width: '12rem', height: '12rem' } : { width: '10rem', height: '10rem' });
+          } else if (window.innerWidth >= 768) {
+            setSize(type === 'Contact me' ? { width: '10rem', height: '10rem' } : { width: '10rem', height: '10rem' });
+          }
+        };
+    
+        updateSize();
+        window.addEventListener('resize', updateSize);
+    
+        return () => window.removeEventListener('resize', updateSize);
+      }, [type]);
+
+
+
+    //GSAP
 
     const magnetoRef = useRef(null);
     const magnetoTextRef = useRef(null);
@@ -71,9 +93,9 @@ const CircleBtn = () => {
 
   return (
     <div className='circleBtn'>
-        <Link to = "/about">
-            <button className='magneto' ref={magnetoRef}>
-                <span className='magneto-text' ref={magnetoTextRef}>About me</span>
+        <Link to = {link}>
+            <button style={size} className='magneto' ref={magnetoRef}>
+                <span className='magneto-text' ref={magnetoTextRef}>{type}</span>
             </button>
         </Link>
     </div>

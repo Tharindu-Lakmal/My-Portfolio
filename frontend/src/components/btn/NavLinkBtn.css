@@ -1,0 +1,19 @@
+.NavLinkBtn {
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    transition: 0.4s ease-in-out;
+}
+
+.social-link {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: var(--text-light);
+}
+
+.social-link:is(:hover, :focus-visible) {
+    text-decoration: underline;
+}

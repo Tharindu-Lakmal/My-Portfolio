@@ -118,16 +118,10 @@ const Intro = () => {
                         vision to life.
                     </p>
 
-                    {/* <button className='magneto' ref={magnetoRef}>
-                        <span className='magneto-text' ref={magnetoTextRef}>About me</span>
-                    </button> */}
-
                     <div className="CircleBtn">
-                        <CircleBtn />
+                        <CircleBtn type='About me' link='/about' />
                     </div>
                     
-                    
-
                 </div>
             </div>
         </div>
