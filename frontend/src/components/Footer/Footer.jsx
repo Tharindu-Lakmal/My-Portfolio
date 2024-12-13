@@ -27,7 +27,7 @@ const Footer = () => {
 
               <div className="contact-link">
                 <CommonBtn title='tharindulakmal.k8@gmail.com' path='mailto:tharindulakmal.k8@gmail.com' />
-                <CommonBtn title='Find me' path='https://wa.me/+94758061381?text=Hello, how can I help you?' target='_blank' icon={assets.whatsapp} />     
+                <CommonBtn title='+94 75 806 1381' path='https://wa.me/+94758061381?text=Hello, how can I help you?' target='_blank' icon={assets.whatsapp} />     
               </div>
 
             </div>

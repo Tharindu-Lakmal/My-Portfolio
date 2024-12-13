@@ -10,7 +10,8 @@
     max-width: 100%;
 }
 
-.slider {
+.slider { 
+    position: relative;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;

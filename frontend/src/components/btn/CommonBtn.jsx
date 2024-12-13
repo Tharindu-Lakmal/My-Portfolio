@@ -75,7 +75,7 @@ const CommonBtn = ({title, icon, path, len, width}) => {
                 <span className='Cmagneto-text' ref={CmagnetoTextRef}>
                     {title}
                     <img style={icon ? { width: '26px', marginLeft: '12px' } : undefined} src={icon} alt="" /> 
-                    <p>{len}</p>
+                    <p className='len'>{len}</p>
                 </span>  
             </button>
         </Link>

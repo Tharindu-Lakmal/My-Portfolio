@@ -12,9 +12,11 @@ const AllWork = () => {
                     <div className="allWork-base-content">
                         <div className="allWork-card-img">
                             <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div>
-                            <div className="view-btn">
-                                <button><a href={item.Link} target='_blank'>View</a></button>
-                            </div>
+                                <a href={item.Link} target='_blank'>
+                                    <div className="view-btn">
+                                        <button><a href={item.Link} target='_blank'>View</a><img src={item.tool} alt="" /></button>
+                                    </div>  
+                                </a>
                             <img src={item.card_img} alt="" />
                         </div>
 

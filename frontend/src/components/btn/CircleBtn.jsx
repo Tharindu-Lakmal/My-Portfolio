@@ -11,9 +11,11 @@ const CircleBtn = ({type, link}) => {
     useEffect(() => {
         const updateSize = () => {
           if (window.innerWidth >= 1200) {
-            setSize(type === 'Contact me' ? { width: '12rem', height: '12rem' } : { width: '10rem', height: '10rem' });
+            setSize(type === 'Contact me' ? { width: '12rem', height: '12rem', background: 'var(--button-active)' } : { width: '10rem', height: '10rem' });
           } else if (window.innerWidth >= 768) {
-            setSize(type === 'Contact me' ? { width: '10rem', height: '10rem' } : { width: '10rem', height: '10rem' });
+            setSize(type === 'Contact me' ? { width: '10rem', height: '10rem', background: 'var(--button-active)' } : { width: '10rem', height: '10rem' });
+          } else {
+            setSize(type === 'Contact me' ? { width: '10rem', height: '10rem', background: 'var(--button-active)' } : { width: '10rem', height: '10rem' });
           }
         };
     
