@@ -1,6 +1,6 @@
 import React from 'react'
 import './Work.css'
-import { all_work, assets, top_work } from '../../../assets/assets'
+import { all_work, top_work } from '../../../assets/assets'
 import CommonBtn from '../../btn/CommonBtn'
 
 
@@ -21,9 +21,11 @@ const Work = () => {
 
                             <div className="work-img">
                                 <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div>
-                                <div className="view-btn">
-                                    <button><a href={item.Link} target='_blank'>View</a></button>
-                                </div>
+                                    <a href={item.Link} target='_blank'>
+                                        <div className="view-btn" href={item.Link}>
+                                            <button><a href={item.Link} target='_blank'>View</a><img src={item.tool} alt="" /></button>
+                                        </div>
+                                    </a>
                                 <img src={item.card_img} alt="" />
                             </div>
 

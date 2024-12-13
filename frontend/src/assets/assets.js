@@ -19,6 +19,11 @@ import github from './github.png'
 import arrowRightDown from './arrow-right-down.svg'
 import group from './group.png'
 
+import gitb from './gitb.png'
+import gitw from './gitw.png'
+import figmab from './figmab.png'
+import figmaw from './figmaw.png'
+
 import artisanLanka from './artisanLanka.png'
 import Earn_Learn from './Earn&Learn.png'
 import JurisConnect from './JurisConnect.png'
@@ -60,6 +65,11 @@ export const assets = {
     check,
     github,
     arrowRightDown,
+
+    gitb,
+    gitw,
+    figmab,
+    figmaw,
 
     JurisConnect,
     Earn_Learn,
@@ -143,6 +153,7 @@ export const all_work = [
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -154,7 +165,18 @@ export const all_work = [
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
+    },
+    {
+        card_img: Desha,
+        category: "Design",
+        name: "Desha E-Mart",
+        description: "Our university community project was designed for Desha E-Mart, a mobile shop, to deliver their services and provide customers with a seamless online experience and quick access.",
+        tools: ["Figma"],
+        git_icon: github,
+        tool: figmaw,
+        Link: "https://www.figma.com/proto/9jXo8jIRbiVyMh7ertHNtJ/Community---Desha-E-Mart?node-id=2-2&starting-point-node-id=2%3A2&t=hm5NFWWAfxl0dc5s-1"
     },
     {
         card_img: MyPortfolio,
@@ -163,6 +185,7 @@ export const all_work = [
         description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
         tools: ["Figma", "ReactJS", "CSS", "GSAP", "EmailJS"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/My-Portfolio.git"
     },
     {
@@ -174,6 +197,7 @@ export const all_work = [
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     },
     {
@@ -183,6 +207,7 @@ export const all_work = [
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
     },
     {
@@ -192,6 +217,7 @@ export const all_work = [
         description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
         tools: ["Figma"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
     },
     {
@@ -203,6 +229,7 @@ export const all_work = [
         description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
         tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/SUJCS_Web_Project.git"
     }
 ]
@@ -215,6 +242,7 @@ export const design = [
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -224,6 +252,7 @@ export const design = [
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
     },
     {
@@ -233,7 +262,18 @@ export const design = [
         description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
         tools: ["Figma"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
+    },
+    {
+        card_img: Desha,
+        category: "Design",
+        name: "Desha E-Mart",
+        description: "Our university community project was designed for Desha E-Mart, a mobile shop, to deliver their services and provide customers with a seamless online experience and quick access.",
+        tools: ["Figma"],
+        git_icon: github,
+        tool: figmaw,
+        Link: "https://www.figma.com/proto/9jXo8jIRbiVyMh7ertHNtJ/Community---Desha-E-Mart?node-id=2-2&starting-point-node-id=2%3A2&t=hm5NFWWAfxl0dc5s-1"
     }
 ]
 
@@ -247,6 +287,7 @@ export const development = [
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
     },
     {
@@ -256,6 +297,7 @@ export const development = [
         description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
         tools: ["Figma", "ReactJS", "CSS", "GSAP", "EmailJS"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/My-Portfolio.git"
     },
     {
@@ -267,6 +309,7 @@ export const development = [
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
     },
     {
@@ -278,6 +321,7 @@ export const development = [
         description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
         tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/SUJCS_Web_Project.git"
     }
 ]
@@ -290,6 +334,7 @@ export const top_work = [
         description: "A web platform designed to help local sellers showcase and sell their handmade crafts globally, providing them with opportunities to grow their businesses.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
     },
     {
@@ -301,6 +346,7 @@ export const top_work = [
         description: "A web platform for real-time legal advice, expert resources, and community discussions. Users can easily access specialized lawyer content and engage in meaningful legal discussions.",
         tools: ["Figma", "Photoshop", "ReactJS", "CSS", "NodeJS", "MongoDB"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
     },
     {
@@ -310,6 +356,7 @@ export const top_work = [
         description: "FoodBuddy is a website designed for restaurants to showcase their menu and offer online food delivery, allowing customers to order their favorite dishes with ease.",
         tools: ["Figma", "Photoshop"],
         git_icon: github,
+        tool: figmaw,
         Link: "https://www.figma.com/proto/VYlWP6A8AC6MGD4jfVy4nG/Untitled?node-id=95-9&node-type=frame&t=naoWvZoJOp1bPBwM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     },
     {
@@ -321,7 +368,18 @@ export const top_work = [
         description: "A platform created to help students sell their handmade crafts to fund their education. It provides a marketplace for students to showcase talents and connect with buyers.",
         tools: ["Figma", "Photoshop", "HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
         git_icon: github,
+        tool: gitw,
         Link: "https://github.com/Tharindu-Lakmal/Learn-and-Earn.git"
+    },
+    {
+        card_img: Desha,
+        category: "Design",
+        name: "Desha E-Mart",
+        description: "Our university community project was designed for Desha E-Mart, a mobile shop, to deliver their services and provide customers with a seamless online experience and quick access.",
+        tools: ["Figma"],
+        git_icon: github,
+        tool: figmaw,
+        Link: "https://www.figma.com/proto/9jXo8jIRbiVyMh7ertHNtJ/Community---Desha-E-Mart?node-id=2-2&starting-point-node-id=2%3A2&t=hm5NFWWAfxl0dc5s-1"
     }
 ]
 

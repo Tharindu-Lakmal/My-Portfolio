@@ -46,12 +46,30 @@
 
 .aboutMiddle .userBig {
     position: relative;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
 }
 
 .userBig img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
+
+
+  
+  /* .userBig {
+    width: 100%;
+    max-width: auto;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .userBig img  {
+    width: 100%;
+    height: auto;
+    display: block;
+  } */
 
 
 /* Responsive Styles */

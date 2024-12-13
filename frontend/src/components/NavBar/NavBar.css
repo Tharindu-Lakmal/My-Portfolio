@@ -37,7 +37,7 @@
 .navBar-container .logo p {
     width: 60vw;
     color: var(--text-light);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     position: sticky;
     display: flex;
@@ -410,5 +410,9 @@
 
     .navBar-container .logo {
         margin: 5vh 5vh;
+    }
+
+    .navBar-container .logo p {
+        font-size: 18px;
     }
 }
