@@ -210,16 +210,16 @@ export const all_work = [
         tool: figmaw,
         Link: "https://www.figma.com/proto/3yAbisyXSzbZwrhHr11eJN/artisanLanka?node-id=91-2&node-type=canvas&t=7Y2YqcdfUgv3O5u0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A2"
     },
-    {
-        card_img: MyPortfolio,
-        category: "Design",
-        name: "My Portfolio",
-        description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
-        tools: ["Figma"],
-        git_icon: github,
-        tool: figmaw,
-        Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
-    },
+    // {
+    //     card_img: MyPortfolio,
+    //     category: "Design",
+    //     name: "My Portfolio",
+    //     description: "Showcases my projects in UI/UX design and web development, utilizing ReactJS and CSS. It highlights my skills in creating engaging and responsive web interfaces.",
+    //     tools: ["Figma"],
+    //     git_icon: github,
+    //     tool: figmaw,
+    //     Link: "https://www.figma.com/proto/3cEdVjLfpR421bqWzrFnXB/My-Portfolio?node-id=1-6&node-type=canvas&t=ue5uyXlgegoIVB12-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6"
+    // },
     {
         card_img: SUSLWebPeoject,
         category: "Design & Development",

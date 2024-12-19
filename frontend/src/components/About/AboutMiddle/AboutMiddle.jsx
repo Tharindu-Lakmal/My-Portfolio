@@ -4,6 +4,27 @@ import { assets } from '../../../assets/assets'
 
 const AboutMiddle = () => {
 
+    const [scrollHeight, setScrollHeight] = useState();
+
+    const windowWidth = window.innerWidth;
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const maxHeight = 1000; // Initial height
+        const minHeight = 650; // Minimum height
+        const scrollPosition = window.scrollY;
+
+        const newHeight = Math.max(
+            minHeight,
+            maxHeight - scrollPosition * 0.2 // smoother transition
+        );
+
+        setScrollHeight(newHeight);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
   return (
@@ -37,7 +58,7 @@ const AboutMiddle = () => {
 
         </div>
 
-        <div className="userBig">
+        <div className="userBig" style={ windowWidth >= 1200? { height: `${scrollHeight}px`, overflow: "hidden" } : {}}>
             <img src={assets.userbig} alt="" />
         </div>
 

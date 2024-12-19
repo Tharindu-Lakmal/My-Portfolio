@@ -13,7 +13,7 @@ const Design = () => {
                         <div className="allWork-card-img">
                             <a href={item.Link} target='_blank'>
                                 <div className="view-btn">
-                                    <button><a href={item.Link} target='_blank'>View</a><img src={item.tool} alt="" /></button>
+                                    <button>View<img src={item.tool} alt="" /></button>
                                 </div>
                             </a>
                             <img src={item.card_img} alt="" />

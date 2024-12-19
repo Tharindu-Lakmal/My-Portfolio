@@ -92,7 +92,7 @@ const NavBar = ({page}) => {
 
             <div className="logo">
                 <div className="online"></div>
-                <Link to = '/'>
+                <Link to = '/home'>
                     <p className={page == 'pure'? "":"dark"}>
                         Tharindu—Lakmal.
                     </p>
@@ -107,7 +107,7 @@ const NavBar = ({page}) => {
                 <div className="nav-middle">
                     <ul className="nav-links-inner">
                         <li onClick={() => setNavActive(false)} className="nav-link">
-                            <NavLink to = '/' className={({ isActive }) => isActive || window.location.pathname === '/' ? 'active-nav' : ''}>Home</NavLink>
+                            <NavLink to = '/home' className={({ isActive }) => isActive || window.location.pathname === '/' ? 'active-nav' : ''}>Home</NavLink>
                         </li>
                         <li onClick={() => setNavActive(false)} className="nav-link">
                             <NavLink to = '/work' className={({ isActive }) => isActive ? 'active-nav' : ''}>Work</NavLink>

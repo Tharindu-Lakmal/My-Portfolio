@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './Footer.css'
 import { assets } from '../../assets/assets'
 import CommonBtn from '../btn/CommonBtn'
@@ -6,6 +6,33 @@ import NavLinkBtn from '../btn/NavLinkBtn'
 import CircleBtn from '../btn/CircleBtn'
 
 const Footer = () => {
+
+    useEffect(() => {
+      const footer = document.querySelector('.footer');
+      const root = document.documentElement;
+
+      const handleScroll = () => {
+        const footerRect = footer.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+
+        if (footerRect.top <= viewportHeight) {
+          const visibleHeight = viewportHeight - footerRect.top;
+          const progress = Math.min(visibleHeight / footerRect.height, 1);
+
+          let newHeight = 100 * (1 - progress);
+          if (window.innerWidth < 980) {
+            newHeight = 80 * (1 - progress);
+          }
+
+          root.style.setProperty('--footer-before-height', `${newHeight}px`);
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
   
   return (
     <div className='footer'>

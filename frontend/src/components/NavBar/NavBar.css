@@ -161,7 +161,7 @@
     position: relative;
     width: 100%;
     padding-block-start: 12px;
-    bottom: -20vh;
+    bottom: -16vh;
     border-top: 1px solid var(--stroke-color-light);
 }
 
@@ -394,7 +394,6 @@
     
     .nav-bottom {
         padding-block-start: 18px;
-        bottom: -20vh;
     }
     
     .nav-bottom ul {
