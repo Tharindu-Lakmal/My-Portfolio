@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './PageLoader.css'
+import { useLocation } from 'react-router-dom';
 
 const languages = ['Hello', 'ආයුබෝවන්', 'வணக்கம்', '你好', 'नमस्ते', 'Bonjour', '안녕하세요', 'مرحبا', 'こんにちは'];
 
@@ -9,12 +10,14 @@ const PageLoader = ({ pageName }) => {
     const [isClosing, setIsClosing] = useState(false);
     const [isFirstLoad, setIsFirstLoad] = useState(true);
 
+    const currentLocation = useLocation();
+
     useEffect(() => {
 
-        // Check if the loader has already been shown
+        // Check if the loader has already been loaded
         const hasLoadedBefore = sessionStorage.getItem('hasLoadedBefore');
         
-        if (hasLoadedBefore && pageName !== 'Home') {
+        if (hasLoadedBefore && currentLocation.pathname !== '/') {
 
             // If not the first load, show only the page name
             setIsFirstLoad(false);
@@ -29,8 +32,8 @@ const PageLoader = ({ pageName }) => {
         }
         
         else {
-            // If first time loading the website or user is on the home page, display languages
-            if (!hasLoadedBefore && pageName == 'Home') {
+            // If first time loading, display welcome languages
+            if (!hasLoadedBefore && currentLocation.pathname == '/') {
                 sessionStorage.setItem('hasLoadedBefore', 'true'); // Mark first-time load in sessionStorage
             }
 
@@ -46,7 +49,7 @@ const PageLoader = ({ pageName }) => {
                     setCurrentTextIndex(prev => prev + 1);
                 }, intervalDuration);
 
-                return () => clearInterval(interval); // Clean up interval
+                return () => clearInterval(interval); // Clear the interval
 
             } else {
                 // After showing all languages, start closing animation
