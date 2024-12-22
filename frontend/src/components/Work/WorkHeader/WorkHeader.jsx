@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './WorkHeader.css'
-import { assets } from '../../../assets/assets'
+import { all_work, assets, design, development } from '../../../assets/assets'
 import AllWork from '../AllWork/AllWork';
 import Design from '../Design/Design';
 import Development from '../Development/Development';
@@ -35,9 +35,9 @@ const WorkHeader = () => {
                 </div>
 
                 <div className="workHeader-btn">
-                    <CommonWorkBtn type={'All'} handleClick={() => setCurrentType("All")} currentType={currentType} />
-                    <CommonWorkBtn type={'Design'} handleClick={() => setCurrentType("Design")} currentType={currentType} />
-                    <CommonWorkBtn type={'Development'} handleClick={() => setCurrentType("Development")} currentType={currentType} />
+                    <CommonWorkBtn type={'All'} handleClick={() => setCurrentType("All")} currentType={currentType} len={all_work.length} />
+                    <CommonWorkBtn type={'Design'} handleClick={() => setCurrentType("Design")} currentType={currentType} len={design.length} />
+                    <CommonWorkBtn type={'Development'} handleClick={() => setCurrentType("Development")} currentType={currentType} len={development.length} />
                 </div>
             </div>
 
