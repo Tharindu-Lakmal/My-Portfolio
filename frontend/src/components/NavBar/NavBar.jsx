@@ -123,7 +123,7 @@ const NavBar = ({page}) => {
 
                 <div className="nav-bottom">
                     <ul className="nav-social-links">
-                        <li className="nav-social-link"><a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank'>LinkdIn</a></li>
+                        <li className="nav-social-link"><a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank'>LinkedIn</a></li>
                         <li className="nav-social-link"><a href='https://github.com/Tharindu-Lakmal' target='_blank'>GitHub</a></li>
                     </ul>
                 </div>
