@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './CommonWorkBtn.css'
 
-const CommonWorkBtn = ({type, handleClick, currentType}) => {
+const CommonWorkBtn = ({type, handleClick, currentType, len}) => {
 
     const WorkmagnetoRef = useRef(null);
     const WorkmagnetoTextRef = useRef(null);
@@ -69,7 +69,10 @@ const CommonWorkBtn = ({type, handleClick, currentType}) => {
 
   return (
     <button onClick={handleClick} className={`Workmagneto ${currentType === type?"btn-active":"btn-empty"}`} ref={WorkmagnetoRef}>
-        <span className='Workmagneto-text' ref={WorkmagnetoTextRef}>{type}</span>
+        <span className='Workmagneto-text' ref={WorkmagnetoTextRef}>
+            {type}
+            <p className='len'>{len}</p>
+        </span>
     </button>
   )
 }

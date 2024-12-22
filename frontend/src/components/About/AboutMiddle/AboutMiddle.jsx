@@ -1,49 +1,82 @@
-import React, { useEffect, useState } from "react";
-import './AboutMiddle.css'
-import { assets } from '../../../assets/assets'
+import React, { useEffect, useRef } from "react";
+import './AboutMiddle.css';
+import { assets } from '../../../assets/assets';
+import Lenis from '@studio-freight/lenis'; // Import Lenis for smooth scrolling
 
 const AboutMiddle = () => {
-
-    const [scrollHeight, setScrollHeight] = useState();
-
-    const windowWidth = window.innerWidth;
+    // Reference for userBig element
+    const userBigRef = useRef(null);
 
     useEffect(() => {
+        // Initialize Lenis Smooth Scrolling
+        const lenis = new Lenis({
+            duration: 1.5,     // Smooth scrolling duration
+            smooth: true,      // Enable smooth scrolling
+            lerp: 0.1,         // Interpolation factor
+        });
+
+        // Animation Frame for Lenis
+        const raf = (time) => {
+            lenis.raf(time); // Sync Lenis animation
+            requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+
+        // **Real-time Scroll Listener**
         const handleScroll = () => {
-        const maxHeight = 1000; // Initial height
-        const minHeight = 650; // Minimum height
-        const scrollPosition = window.scrollY;
+            const scrollPosition = window.scrollY; // Get current scroll position
+            const screenWidth = window.innerWidth;
 
-        const newHeight = Math.max(
-            minHeight,
-            maxHeight - scrollPosition * 0.2 // smoother transition
-        );
+            if (userBigRef.current && screenWidth > 1200) {
+                const containerHeight = 1000; // Maximum height of the container
+                const minHeight = 650;
 
-        setScrollHeight(newHeight);
+                // Calculate new height dynamically
+                const newHeight = Math.max(
+                    minHeight,
+                    containerHeight - scrollPosition * 0.2
+                );
+
+                // Prevent going beyond the container
+                const translateY = Math.min(
+                    (containerHeight - newHeight) / 2,
+                    (containerHeight - minHeight) / 2
+                );
+
+                // Apply styles for smooth height and upward movement
+                userBigRef.current.style.height = `${newHeight}px`;
+                userBigRef.current.style.transform = `translateY(-${translateY}px)`; // Moves up as height decreases
+            }
         };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        // Add native scroll listener for real-time updates
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup
+        return () => {
+            lenis.destroy(); // Destroy Lenis instance
+            window.removeEventListener('scroll', handleScroll); // Remove scroll listener
+        };
     }, []);
 
+    return (
+        <div className='aboutMiddle'>
 
-  return (
-    <div className='aboutMiddle'>
-        
-        <div className="aboutMiddle-top">
+            <div className="aboutMiddle-top">
+                <div className="aim">
+                    <img src={assets.aim} alt="" />
+                    <p className="aim-text">
+                        With practice in both Frontend and Backend 
+                        development, I leverage technologies like 
+                        ReactJS, NodeJS, PHP, and more to create 
+                        seamless, scalable, and functional applications.
+                    </p>
+                </div>
 
-            <div className="aim">
-                <img src={assets.aim} alt="" />
-                <p className="aim-text">
-                    With practice in both Frontend and Backend 
-                    development, I leverage technologies like 
-                    ReactJS, NodeJS, PHP, and more to create 
-                    seamless, scalable, and functional applications.
-                </p>
-            </div>
-
-            <div className="container-card">
-                <div className="card-icon"><img src={assets.right_quotation} alt="" /></div>
+                <div className="container-card">
+                    <div className="card-icon">
+                        <img src={assets.right_quotation} alt="" />
+                    </div>
                     <div className="card-content">
                         <p>
                             Whether it's designing a captivating user interface 
@@ -53,17 +86,21 @@ const AboutMiddle = () => {
                             inspire and engage.
                         </p>
                     </div>
-                <div className="card-icon-bottom"><img src={assets.right_quotation_} alt="" /></div>
-              </div>
+                    <div className="card-icon-bottom">
+                        <img src={assets.right_quotation_} alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div
+                ref={userBigRef}
+                className="userBig"
+            >
+                <img src={assets.userbig} alt="" />
+            </div>
 
         </div>
+    );
+};
 
-        <div className="userBig" style={ windowWidth >= 1200? { height: `${scrollHeight}px`, overflow: "hidden" } : {}}>
-            <img src={assets.userbig} alt="" />
-        </div>
-
-    </div>
-  )
-}
-
-export default AboutMiddle
+export default AboutMiddle;
