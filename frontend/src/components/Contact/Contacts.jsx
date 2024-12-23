@@ -179,7 +179,7 @@ const Contacts = () => {
 
               <div className="social">
                 <iframe src="https://lottie.host/embed/fff8f992-0dd2-479c-92ac-0f69f1dfa53d/rXfmeRCLiA.json"></iframe>
-                <NavLinkBtn type='LinkdIn' link='https://www.linkedin.com/in/tharindulakmal99' />
+                <NavLinkBtn type='LinkedIn' link='https://www.linkedin.com/in/tharindulakmal99' />
                 <NavLinkBtn type='GitHub' link='https://github.com/Tharindu-Lakmal' />
               </div>
             </div>
