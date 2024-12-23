@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { gsap, Elastic, Power4 } from 'gsap';
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
+import NavLinkBtn from '../btn/NavLinkBtn';
 
 const NavBar = ({page}) => {
 
@@ -123,8 +124,8 @@ const NavBar = ({page}) => {
 
                 <div className="nav-bottom">
                     <ul className="nav-social-links">
-                        <li className="nav-social-link"><a href='https://linkedin.com/in/tharindu-lakmal-1b09022a2' target='_blank'>LinkdIn</a></li>
-                        <li className="nav-social-link"><a href='https://github.com/Tharindu-Lakmal' target='_blank'>GitHub</a></li>
+                        <NavLinkBtn type='LinkedIn' link='https://www.linkedin.com/in/tharindulakmal99' />
+                        <NavLinkBtn type='GitHub' link='https://github.com/Tharindu-Lakmal' />
                     </ul>
                 </div>
             </nav>
