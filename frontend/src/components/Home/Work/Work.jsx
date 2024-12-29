@@ -2,6 +2,7 @@ import React from 'react'
 import './Work.css'
 import { all_work, top_work } from '../../../assets/assets'
 import CommonBtn from '../../btn/CommonBtn'
+import { NavLink } from 'react-router-dom'
 
 
 const Work = () => {
@@ -17,25 +18,28 @@ const Work = () => {
             <div className="works-content">
                 {top_work.map((item, index) => {
                     return (
+                        <NavLink to={window.innerWidth < 992 ? `/work/${item?.name}` : ''}>
                         <div className="work" key={index}>
 
                             <div className="work-img">
-                                <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div>
-                                    <a href={item.Link} target='_blank'>
+                                {/* <div className="type"><img src={item.icon} alt="" /><p>{item.type}</p></div> */}
+                                    {/* <a href={item.Link} target='_blank'> */}
                                         <div className="view-btn" href={item.Link}>
-                                            <button>View<img src={item.tool} alt="" /></button>
+                                            <NavLink to={window.innerWidth > 992 ? `/work/${item?.name}` : ''}>
+                                                <button>View</button>
+                                            </NavLink>
                                         </div>
-                                    </a>
+                                    {/* </a> */}
                                 <img src={item.card_img} alt="" />
                             </div>
 
                             <div className="work-content">
 
                                 <div className="work-top">
-                                    <p className="category">{item.category} <span><a href={item.Link} target='_blank'><img src={item.git_icon} alt="" /></a></span></p>
+                                    <p className="category">{item.category}</p>
                                     <h2 className="name">{item.name}</h2>
                                 </div>
-                                <div className="work-bottom">
+                                {/* <div className="work-bottom">
                                     <p className="description">{item.description}</p>
                                     
                                     <p className="tools">
@@ -44,11 +48,12 @@ const Work = () => {
                                         ))}
                                     </p>
                                     
-                                </div>
+                                </div> */}
 
                             </div>
 
                         </div>
+                        </NavLink>
                     )
                 })}
             </div>

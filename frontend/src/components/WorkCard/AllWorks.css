@@ -1,0 +1,182 @@
+.allWorks {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 72px;
+}
+
+.allWorks-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.allWorks-card-img {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+}
+
+.allWorks-card-img img {
+    width: 100%;
+}
+
+.allWorks-card .view-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(176, 185, 182, 0.2); */
+    visibility: hidden;
+}
+
+.allWorks-card .view-btn button {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--button-active);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.allWorks-card .view-btn a:is(:hover, :focus-visible) {
+    text-decoration: none;
+}
+
+.allWorks-card .view-btn button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--button-active-extra);
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.allWorks-card .view-btn button::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.allWorks-card .view-btn button:is(:hover, :focus-visible)::before {
+    height: 100%;
+}
+
+.allWorks-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* .allWorks-content .type {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    color: var(--text-light);
+}
+
+.allWorks-content .type p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.allWorks-content .type img {
+    width: 16px;
+} */
+
+.allWorks-card .main-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-heading p {
+    color: var(--text-dark-extra-light);
+}
+.main-heading h2 {
+    color: var(--text-dark);
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 12px;
+}
+.main-heading hr {
+    border: 0.5px solid var(--stroke-color)
+}
+
+.main-heading img {
+    width: 18px;
+    height: auto;
+    margin-inline-start: 12px;
+}
+
+.main-heading-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Styles */
+
+
+@media only screen and (min-width:768px) {
+    .allWorks {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        gap: 64px;
+    }
+
+    .allWorks-content {
+        gap: 32px;
+    }
+
+    .allWorks-card .main-heading {
+        gap: 16px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    
+    .allWorks-card .main-heading h2 {
+        font-size: var(--font-medium);
+    }
+    
+    .main-heading img {
+        display: none;
+    }
+
+    .allWorks-card .view-btn {
+        visibility: hidden;
+        transition: 500ms ease-in-out;
+    }
+
+    .view-btn button {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 500ms ease-in-out;
+    }
+
+    .allWorks-card:is(:hover, :focus-visible) .view-btn {
+        visibility: visible;
+    }
+    .allWorks-card:is(:hover, :focus-visible) .view-btn button {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

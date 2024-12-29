@@ -5,6 +5,7 @@ import AllWork from '../AllWork/AllWork';
 import Design from '../Design/Design';
 import Development from '../Development/Development';
 import CommonWorkBtn from '../../btn/CommonWorkBtn';
+import AllWorks from '../../WorkCard/AllWorks';
 
 const WorkHeader = () => {
 
@@ -25,7 +26,7 @@ const WorkHeader = () => {
 
             <div className="workHeader-content">
                 <div className="workHeader-img">
-                    <img src={assets.work_img} alt="" />
+                    {/* <img src={assets.work_img} alt="" /> */}
                 </div>
 
                 <div className="workHeader-header">
@@ -43,13 +44,13 @@ const WorkHeader = () => {
 
 
             <div className={`content-section ${currentType === 'All' ? 'active' : ''}`}>
-                {currentType === "All" && <AllWork />}
+                {currentType === "All" && <AllWorks type={currentType} />}
             </div>
             <div className={`content-section ${currentType === 'Design' ? 'active' : ''}`}>
-                {currentType === "Design" && <Design />}
+                {currentType === "Design" && <AllWorks type={currentType} />}
             </div>
             <div className={`content-section ${currentType === 'Development' ? 'active' : ''}`}>
-                {currentType === "Development" && <Development />}
+                {currentType === "Development" && <AllWorks type={currentType} />}
             </div>
 
         </div>

@@ -8,6 +8,7 @@ import About from './page/About/About';
 import Contact from './page/Contact/Contact';
 import ScrollBack from './components/ScrollBack/ScrollBack';
 import SmoothScroller from './components/SmoothScroller/SmoothScroller';
+import WorkDetails from './page/WorkDetails/WorkDetails';
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
             <Route path="/home" element={<Home />} />
           )}
           <Route path="/work" element={<Work />} />
+          <Route path='/work/:workName' element={<WorkDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
