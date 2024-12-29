@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect } from 'react';
-import "./Home.css"
 import Hero from '../../components/Home/Hero/Hero'
 import Intro from '../../components/Home/Intro/Intro'
 import Skills from '../../components/Home/Skills/Skills'

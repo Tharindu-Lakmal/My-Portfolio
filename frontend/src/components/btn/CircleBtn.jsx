@@ -3,7 +3,7 @@ import { gsap, Elastic, Power4 } from 'gsap';
 import './CircleBtn.css'
 import { Link } from 'react-router-dom';
 
-const CircleBtn = ({type, link}) => {
+const CircleBtn = ({type, link, target}) => {
 
     const [size, setSize] = useState({ width: '10rem', height: '10rem' });
 
@@ -95,7 +95,7 @@ const CircleBtn = ({type, link}) => {
 
   return (
     <div className='circleBtn'>
-        <Link to = {link}>
+        <Link to = {link} target={target}>
             <button style={size} className='magneto' ref={magnetoRef}>
                 <span className='magneto-text' ref={magnetoTextRef}>{type}</span>
             </button>
