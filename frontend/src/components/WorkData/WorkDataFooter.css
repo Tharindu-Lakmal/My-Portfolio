@@ -1,9 +1,9 @@
 .workdatafooter {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     max-height: 1100px;
-    min-height: max-content;
+    height: max-content;
     cursor: auto;
     background-color: var(--text-dark);
     display: grid;

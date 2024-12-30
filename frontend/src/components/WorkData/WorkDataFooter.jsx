@@ -57,13 +57,13 @@ const WorkDataFooter = ({}) => {
 
                                     setTimeout(() => {
                                         navigate(`/work/${item?.name}`);
-                                    }, 200);
+                                    }, 300);
                                     
                                      // Navigate to the route
 
                                     setTimeout(() => {
                                         window.location.reload(); // Reload the page loader
-                                    }, 400);
+                                    }, 300);
                                 }}
                                 >
                                     <div className="main-heading">
