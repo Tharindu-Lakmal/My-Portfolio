@@ -26,6 +26,7 @@ import MyPortfolio from './MyPortfolio.png'
 import SUSLWebPeoject from './SUSLWebPeoject.png'
 import Desha from './Desha.png'
 import PortfolioDesign from './PortfolioDesign.png'
+import festiVo from './festiVo.png'
 
 
 //details images
@@ -37,6 +38,7 @@ import students from './students.jpg'
 import profile from './profile.jpg'
 import esercice from './esercice.jpg'
 import profileDesign from './profileDesign.jpg'
+import festiVobig from './festiVobig.jpg'
 
 import star from './star.png'
 import feature from './feature.png'
@@ -65,6 +67,9 @@ import Artic3 from './details/Artic3.png'
 import Learn1 from './details/Learn1.png'
 import Learn2 from './details/Learn2.png'
 import Learn3 from './details/Learn3.png'
+import festivo1 from './details/festivo1.png'
+import festivo2 from './details/festivo2.png'
+import festivo3 from './details/festivo3.png'
 
 import SUJCS1 from './details/SUJCS1.png'
 
@@ -82,6 +87,9 @@ import ReactJS from './ReactJs.svg'
 import tailwind from './tailwind.svg'
 import firebase from './firebase.svg'
 import css from './css.svg'
+import php from './php.svg'
+import mysql from './mysql.svg'
+import gsap from './gsap.jpg'
 
 export const assets = {
     cv,
@@ -166,6 +174,38 @@ export const all_work = [
         ],
 
         Link: "https://github.com/Tharindu-Lakmal/Juris-Connect.git"
+    },
+    {
+        card_img: festiVo,
+        big_img: festiVobig,
+        category: "Design & Development",
+        name: "festiVo",
+        team: ["Design & Development: Tharindu Lakmal"],
+        type: "Individual",
+        description: "A robust Event Management System designed to simplify event creation, registration, and analytics. Built with React for the front end, Spring Boot for the back end, and MySQL as the database, this project focuses on scalability, maintainability, and user-friendly design. It enables efficient event handling with features like attendee registration, event analytics, and data validation.",
+        tools: ["ReactJS", "Spring Boot", "MySQL", "CSS"],
+
+        images: [festivo1, festivo2, festivo3],
+
+        key_points : [
+            {
+                icon: feature,
+                topic: "Feature",
+                desc: "The system includes functionality for creating, updating, deleting, and viewing events with pagination, filtering, and search options. Users can register for events, and organizers can view attendee lists and analytics such as total attendees and capacity utilization."
+            },
+            {
+                icon: challenge,
+                topic: "Challenges",
+                desc: "Ensuring data integrity with complex database relationships, implementing error handling for input validation, and maintaining a responsive design were key challenges. Additionally, managing state across multiple components using React Context API was a critical learning point."
+            },
+            {
+                icon: star,
+                topic: "Knowdelage",
+                desc: "Deepened understanding of full-stack development, database schema design, and best practices in API development with Spring Boot. Enhanced skills in modular React component design and responsive UI development using CSS Modules."
+            }
+        ],
+
+        Link: "https://github.com/Tharindu-Lakmal/Event-Management-System"
     },
     {
         card_img: Desha,
@@ -431,6 +471,9 @@ export const development = [
         description: "A platform for researchers, scholars, and students to share groundbreaking findings in computer science. It publishes articles and studies that contribute to societal well-being.",
         tools: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"],
         Link: "https://github.com/Tharindu-Lakmal/SUJCS_Web_Project.git"
+    },
+    {
+
     }
 ]
 
@@ -528,13 +571,26 @@ export const tools2 = [
         tools_icon: css,
         tools_name: "CSS"
     },
+    
+    {
+        tools_icon: gsap,
+        tools_name: "GSAP"
+    },
     {
         tools_icon: nodejs,
         tools_name: "NodeJS"
     },
     {
+        tools_icon: php,
+        tools_name: "PHP"
+    },
+    {
         tools_icon: git,
         tools_name: "Git"
+    },
+    {
+        tools_icon: mysql,
+        tools_name: "MySQL"
     },
     {
         tools_icon: mongodb,
